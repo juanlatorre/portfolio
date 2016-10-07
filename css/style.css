@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,500,700';
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +6,7 @@
 body {
   background: #f1f1f1;
   color: #444;
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 14px;
   text-shadow: 0 0 1px transparent;
 }
@@ -25,7 +26,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Raleway", Helvetica, Arial, sans-serif;
 }
 h1 {
   font-size: 1.8em;
@@ -38,7 +39,7 @@ h3 {
 }
 a {
   text-decoration: none;
-  color: #258fb8;
+  color: #2980b9;
 }
 a:hover {
   text-decoration: none;
@@ -100,21 +101,23 @@ a:hover {
 }
 #header {
   height: 55px;
-  background: #3f51b5;
+  background: #25737e;
   min-height: 56px;
   -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.5);
   box-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
-#header h1 {
+#header .titulo {
   font-weight: normal;
   font-size: 2em;
   line-height: 55px;
 }
-#header h1 a {
+#header .titulo a {
   color: #f5f5f5;
 }
-#header h2 {
-  display: none;
+#header .subtitulo {
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #f5f5f5;
 }
 @media screen and (max-width: 1260px) {
   #header {
@@ -245,7 +248,7 @@ article header .icon {
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #258fb8;
+  color: #2980b9;
 }
 @media screen and (max-width: 600px) {
   article header .icon {
@@ -262,7 +265,7 @@ article header .icon:before {
 }
 article header time {
   color: #999;
-  font: 0.8em "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.8em "Lato", "Raleway", Helvetica, Arial, sans-serif;
   margin-bottom: 5px;
   display: block;
   line-height: 2.5;
@@ -274,7 +277,7 @@ article header .title a {
   color: #444;
 }
 article header .title a:hover {
-  color: #258fb8;
+  color: #2980b9;
   text-decoration: none;
 }
 article .entry {
@@ -438,7 +441,7 @@ article footer a {
   color: #999;
 }
 article footer a:hover {
-  color: #258fb8;
+  color: #2980b9;
   text-decoration: none;
 }
 article footer a:before {
@@ -492,12 +495,12 @@ article footer .addthis iframe {
   padding: 5px 10px;
   background: #ddd;
   color: #999;
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Raleway", Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
   margin-bottom: 50px;
 }
 #pagination a:hover {
-  background: #258fb8;
+  background: #2980b9;
   color: #fff;
   text-decoration: none;
   text-shadow: none;
@@ -531,7 +534,7 @@ article footer .addthis iframe {
   color: #444;
 }
 .archive-post a:hover {
-  color: #258fb8;
+  color: #2980b9;
   text-decoration: none;
 }
 .archive-post.tag:before {
@@ -548,7 +551,7 @@ article footer .addthis iframe {
 }
 .archive span {
   color: #999;
-  font: 0.8em "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.8em "Lato", "Raleway", Helvetica, Arial, sans-serif;
   margin-top: 5px;
   margin-right: 10px;
   margin-bottom: 5px;
@@ -611,7 +614,7 @@ article footer .addthis iframe {
 }
 #sidebar .search input {
   background: #fff;
-  font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Raleway", Helvetica, Arial, sans-serif;
   font-style: italic;
   font-size: 1em;
   padding: 10px 15px;
@@ -659,7 +662,7 @@ article footer .addthis iframe {
 #footer {
   color: #999;
   margin-bottom: 50px;
-  font: 0.9em/1.6 "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: 0.9em/1.6 "Lato", "Raleway", Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
 }
 .entry .gist {
@@ -696,10 +699,10 @@ article footer .addthis iframe {
   font-size: 100%;
 }
 .entry .gist .gist-file .gist-meta a {
-  color: #258fb8;
+  color: #2980b9;
 }
 .entry .gist .gist-file .gist-meta a:visited {
-  color: #258fb8;
+  color: #2980b9;
 }
 figure.highlight {
   background: #eee;
