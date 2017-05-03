@@ -1,47 +1,84 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="stylesheet" href="https://juanlatorre.github.io/theme/css/main.css" type="text/css" />
-<link href="https://juanlatorre.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Juan Latorre's Blog ATOM Feed" />
-<link rel="icon" type="image/png" href="https://juanlatorre.github.io/theme/fav.png" />
-<title>Juan Latorre's Blog </title>
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-<!--[if lte IE 7]>
-<link rel="stylesheet" type="text/css" media="all" href="https://juanlatorre.github.io/css/ie.css"/>
-<script src="https://juanlatorre.github.io/js/IE8.js" type="text/javascript"></script><![endif]-->
-<!--[if lt IE 7]>
-<link rel="stylesheet" type="text/css" media="all" href="https://juanlatorre.github.io/css/ie6.css"/><![endif]-->
-</head>
-<body>
-<div id="conteneur">
-<header>
-<h1>
-<a href="https://juanlatorre.github.io" id="site-title">Juan Latorre's Blog </a> :
-<a href="https://juanlatorre.github.io/archives.html" id="page-title">tags</a></h1>
-</header>
-<section id="content" class="body">
-<ul>
-    <li><a href="https://juanlatorre.github.io/tag/pelican.html">pelican</a></li>
-    <li><a href="https://juanlatorre.github.io/tag/blog.html">blog</a></li>
-    <li><a href="https://juanlatorre.github.io/tag/tutorial.html">tutorial</a></li>
-    <li><a href="https://juanlatorre.github.io/tag/python.html">python</a></li>
-</ul>
-</section>
-<footer>
-<nav>
-<ul>
-<li><a href="https://blog.getpelican.com/">Pelican</a> & <a href="https://github.com/Bricabraque/bricabrac-pelican-theme">bricabrac</a></li>
-<li> :: <a href="https://juanlatorre.github.io/archives.html">archives</a></li>
-<li> :: <a href="https://juanlatorre.github.io/tags.html">tags</a></li>
-<li> :: <a href="https://juanlatorre.github.io/feeds/all.atom.xml">atom</a></li>
-<li> :: <a href="#">You can add links in your config file</a></li>
-<li> :: <a href="#">Another social link</a></li>
-</ul>
-</nav>
-</footer>
-</div>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=endge, chrome=IE8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+    <title>Juan Latorre's Blog — Etiquetas</title>
+    <!--[if lte IE 8]><script type="text/javascript" src="https://juanlatorre.github.io/theme/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://juanlatorre.github.io/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="https://juanlatorre.github.io/theme/css/theme.css" />
+    <link rel="shortcut icon" type="image/png" href="https://juanlatorre.github.io/favicon.png" />
+    <!--[if lte IE 8]><link rel="shortcut icon" type="image/x-icon" href="https://juanlatorre.github.io/favicon.ico" /><![endif]-->
+    <link rel="alternate" type="application/atom+xml"
+                           title="Juan Latorre's Blog — Flux Atom"
+                           href="https://juanlatorre.github.io/" />
+
+    <script type="text/javascript" src="https://juanlatorre.github.io/theme/js/microTags.js"></script>
+    <script>
+      function tag_cloud_init() {
+        var ul = document.getElementById("tag-cloud");
+        window.tagCloud = new microTags(ul, {
+          'min-size': .95,
+          'max-size': 3.5,
+          'min-angle': -8,
+          'max-angle': 8
+        });
+      }
+      if (window.addEventListener) window.addEventListener("load", tag_cloud_init, false);
+      else if (window.attachEvent) window.attachEvent("onload", tag_cloud_init);
+      else window.onload = tag_cloud_init;
+    </script>
+  </head>
+  <body>
+    <div id="page">
+      <header id="page-head">
+        <h1>
+          <a href="https://juanlatorre.github.io/index.html">Juan Latorre's Blog</a>
+        </h1>
+      </header>
+
+      <div id="page-body">
+        <section id="page-main" role="main">
+      <h1>Etiquetas</h1>
+      <ul id="tag-cloud">
+      </ul>
+      </section>
+
+        <aside id="page-side">
+          <!-- begin includes/sidebar.html -->
+          <nav>
+            <h3>Páginas</h3>
+            <ul>
+              <li><a href="https://juanlatorre.github.io">Inicio</a></li>
+              <!-- <li><a href="https://juanlatorre.github.io/categories.html">Categorías</a></li> -->
+              <li><a href="https://juanlatorre.github.io/archives.html">Entradas</a></li>
+              <!-- <li><a href="https://juanlatorre.github.io/tags.html">Etiquetas</a></li> -->
+              <li><a href="https://juanlatorre.github.io/about.html">Sobre mi</a></li>
+            </ul>
+          </nav>
+
+          <!--           <nav>
+            <h3>Catégories</h3>
+            <ul>
+              <li><a href="https://juanlatorre.github.io/category/python.html">Python</a></li>
+            </ul>
+          </nav>
+ -->
+
+          <nav>
+            <h3>Enlaces</h3>
+            <ul>
+              <li><a href="https://twitter.com/unnamed_query">twitter</a></li>
+              <li><a href="https://github.com/juanlatorre">github</a></li>
+            </ul>
+          </nav>
+          <!-- end includes/sidebar.html --></aside>
+      </div>
+
+      <footer id="page-foot">
+        <p> Creado con <a href="https://blog.getpelican.com/">Pelican</a> | Diseño por <a href="https://github.com/m-r-r/">m-r-r</a> | Funciona bajo <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a></p>
+      </footer>
+    </div> <!-- /#page -->
+  </body>
 </html>
