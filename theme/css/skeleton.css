@@ -30,9 +30,10 @@ html, body {
 
 #page-side {
     float: left;
-    width: 25%;
+    width: 23%;
     height: 100%;
     margin-top: 0;
+    margin-right: 2%;
 }
 
 #page-main {
