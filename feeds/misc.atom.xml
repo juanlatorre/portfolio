@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Juan Latorre — Blog - misc</title><link href="https://juanlatorre.github.io/" rel="alternate"></link><link href="https://juanlatorre.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://juanlatorre.github.io/</id><updated>2017-05-04T12:32:19-03:00</updated><entry><title>Pelican &amp; Github</title><link href="https://juanlatorre.github.io/pelican-y-github.html" rel="alternate"></link><published>2017-05-04T12:32:19-03:00</published><updated>2017-05-04T12:32:19-03:00</updated><author><name>Juan Latorre</name></author><id>tag:juanlatorre.github.io,2017-05-04:/pelican-y-github.html</id><summary type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Juan Latorre — Blog - misc</title><link href="https://juanlatorre.github.io/" rel="alternate"></link><link href="https://juanlatorre.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://juanlatorre.github.io/</id><updated>2017-05-04T12:33:53-03:00</updated><entry><title>Pelican &amp; Github</title><link href="https://juanlatorre.github.io/pelican-y-github.html" rel="alternate"></link><published>2017-05-04T12:33:53-03:00</published><updated>2017-05-04T12:33:53-03:00</updated><author><name>Juan Latorre</name></author><id>tag:juanlatorre.github.io,2017-05-04:/pelican-y-github.html</id><summary type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
 Antes de comenzar con el contenido real, a repasar conceptos.&lt;/p&gt;
 &lt;h2&gt;¿Qué es Pelican?&lt;/h2&gt;
 &lt;p&gt;Pelican, es un &lt;em&gt;static site generator&lt;/em&gt; escrito en Python, no requiere base de datos ni lógica del lado …&lt;/p&gt;</summary><content type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
@@ -115,12 +115,12 @@ Esto evitará que se borre el contenido de la carpeta &lt;em&gt;output&lt;/em&gt
 
 $ &lt;span class="nb"&gt;cd&lt;/span&gt; output
 $ git add .
-$ git commit -m &lt;span class="s2"&gt;&amp;quot;Primer post&amp;quot;&lt;/span&gt;  &amp;lt;-- Esto hace commmit al repositorio usuario.github.io
+$ git commit -m &lt;span class="s2"&gt;&amp;quot;Primer post&amp;quot;&lt;/span&gt; &amp;lt;--  usuario.github.io
 $ git push origin master
 
 $ &lt;span class="nb"&gt;cd&lt;/span&gt; ..
 $ git add .
-$ git commit -m &lt;span class="s2"&gt;&amp;quot;Primer commit&amp;quot;&lt;/span&gt;  &amp;lt;-- Esto hace commit al repositorio usuario.github.io-src
+$ git commit -m &lt;span class="s2"&gt;&amp;quot;Primer commit&amp;quot;&lt;/span&gt;  &amp;lt;-- usuario.github.io-src
 $ git push origin master
 &lt;/pre&gt;&lt;/div&gt;
 
