@@ -1,5 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Juan Latorre — Blog - misc</title><link href="https://juanlatorre.github.io/" rel="alternate"></link><link href="https://juanlatorre.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://juanlatorre.github.io/</id><updated>2017-05-10T12:13:12-03:00</updated><entry><title>Pelican &amp; Github</title><link href="https://juanlatorre.github.io/pelican-y-github.html" rel="alternate"></link><published>2017-05-10T12:13:12-03:00</published><updated>2017-05-10T12:13:12-03:00</updated><author><name>Juan Latorre</name></author><id>tag:juanlatorre.github.io,2017-05-10:/pelican-y-github.html</id><summary type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Juan Latorre — Blog - misc</title><link href="https://juanlatorre.github.io/" rel="alternate"></link><link href="https://juanlatorre.github.io/feeds/misc.atom.xml" rel="self"></link><id>https://juanlatorre.github.io/</id><updated>2017-06-15T01:41:00-04:00</updated><entry><title>Concepto de Distribución de Paquetes en CuarzoOS</title><link href="https://juanlatorre.github.io/concepto-distribucion-paquetes-cuarzoos.html" rel="alternate"></link><published>2017-06-15T01:41:00-04:00</published><updated>2017-06-15T01:41:00-04:00</updated><author><name>Juan Latorre</name></author><id>tag:juanlatorre.github.io,2017-06-15:/concepto-distribucion-paquetes-cuarzoos.html</id><summary type="html">&lt;h2&gt;Ejemplo&lt;/h2&gt;
+&lt;p&gt;Tomemos el ejemplo de la Aplicación cualquiera &lt;strong&gt;AppGenerica.cuarzo&lt;/strong&gt;
+Esta tiene las siguientes características:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contiene un HASH único, identificador de aplicación, no puede ser cambiado.&lt;/li&gt;
+&lt;li&gt;Es una imagen ISO, montable y solo de lectura (Read-Only).&lt;/li&gt;
+&lt;li&gt;Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h2&gt;Ejemplo&lt;/h2&gt;
+&lt;p&gt;Tomemos el ejemplo de la Aplicación cualquiera &lt;strong&gt;AppGenerica.cuarzo&lt;/strong&gt;
+Esta tiene las siguientes características:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contiene un HASH único, identificador de aplicación, no puede ser cambiado.&lt;/li&gt;
+&lt;li&gt;Es una imagen ISO, montable y solo de lectura (Read-Only).&lt;/li&gt;
+&lt;li&gt;Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora, esta aplicación posee la siguiente estructura interna:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libs/&lt;ul&gt;
+&lt;li&gt;libAlgo-1.2.so&lt;/li&gt;
+&lt;li&gt;libAlgo-1.3.so&lt;/li&gt;
+&lt;li&gt;libOtraCosa-5.7.so&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;bin/&lt;ul&gt;
+&lt;li&gt;binarios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;other/&lt;ul&gt;
+&lt;li&gt;Lo que sea que necesite esa app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AppRun&lt;/li&gt;
+&lt;li&gt;zync-curl&lt;/li&gt;
+&lt;li&gt;default.desktop&lt;/li&gt;
+&lt;li&gt;default.png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Explicación&lt;/h2&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;libs&lt;/strong&gt; contiene las librerias necesarias de la aplicación (obviando las que se incluyen en el sistema), estas librerias tiene un HASH único designado a cada archivo, al momento de correr la Aplicación por primera vez, todas estas librerias se mueven a la carpeta física &lt;strong&gt;/usr/share/crzlibs/&lt;/strong&gt; donde se almacenarán las librerias externas al sistema, al comprobar que una librería ya existe, se comprueba que el HASH corresponde, de ser así se utiliza y de no ser así se reemplaza con otro nombre (Ej: &lt;em&gt;libAlgo-1.2-good.so&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;bin&lt;/strong&gt; contiene los binarios de la aplicación&lt;/p&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;other&lt;/strong&gt; puede contener lo que sea que esa app utilice&lt;/p&gt;
+&lt;p&gt;El script &lt;strong&gt;AppRun&lt;/strong&gt; es el encargado de correr el binario al montar la ISO, a la vez, cada vez que la aplicación es abierta, comprueba el HASH único de esta, si algun archivo ha sido modificado (por un externo o usuario) o está corrupto, avisa al usuario que &lt;em&gt;"Esta aplicación puede estar corrupta o modificada, lo que es peligroso para su equipo".&lt;/em&gt; De ser este el caso se presentarán 4 opciones en pantalla:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eliminar aplicación.&lt;/li&gt;
+&lt;li&gt;Autoarreglar (por medio de zync-curl se descarga el archivo corrupto de nuevo y se arregla a si misma)&lt;/li&gt;
+&lt;li&gt;Abrir de todos modos (inseguro)&lt;/li&gt;
+&lt;li&gt;Cancelar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Preferencias y archivos residuales&lt;/h2&gt;
+&lt;p&gt;Cada aplicación está en la obligación de seguir las especificaciones respecto a archivos residuales. Todos los archivos que la aplicación quiera escribir en el disco, deberán escribirse en:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;~/.prefs/cuarzo/APP/*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Desinstalación o eliminación&lt;/h2&gt;
+&lt;p&gt;El script &lt;strong&gt;AppRun&lt;/strong&gt; además tiene la facultad de detectar cuando una aplicación se mueve se su correspondiente ubicación a la papelera, de ser así se considera eliminación y por ende elimina automáticamente todos los archivos residuales ubicados en el path mencionado posteriormente; NO así las librerias, que se mantendrán en su lugar a pesar de la eliminación de la aplicación.&lt;/p&gt;</content><category term="concepto"></category><category term="distribucion"></category><category term="paquetes"></category><category term="linux"></category><category term="cuarzoOS"></category><category term="cuarzo"></category></entry><entry><title>Pelican &amp; Github</title><link href="https://juanlatorre.github.io/pelican-y-github.html" rel="alternate"></link><published>2017-05-10T19:35:00-03:00</published><updated>2017-05-10T19:35:00-03:00</updated><author><name>Juan Latorre</name></author><id>tag:juanlatorre.github.io,2017-05-10:/pelican-y-github.html</id><summary type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
 Antes de comenzar con el contenido real, a repasar conceptos.&lt;/p&gt;
 &lt;h2&gt;¿Qué es Pelican?&lt;/h2&gt;
 &lt;p&gt;Pelican, es un &lt;em&gt;static site generator&lt;/em&gt; escrito en Python, no requiere base de datos ni lógica del lado …&lt;/p&gt;</summary><content type="html">&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.

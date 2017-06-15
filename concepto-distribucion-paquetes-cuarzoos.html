@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+        <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=endge, chrome=IE8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, user-scalable=no" />
+    <title>Concepto de Distribución de Paquetes en CuarzoOS — Juan Latorre — Blog</title>
+    <!--[if lte IE 8]><script type="text/javascript" src="https://juanlatorre.github.io/theme/js/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://juanlatorre.github.io/theme/css/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="https://juanlatorre.github.io/theme/css/theme.css" />
+    <link rel="stylesheet" typ2="text/css" href="https://juanlatorre.github.io/theme/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="https://juanlatorre.github.io/favicon.png" />
+    <meta name="description" content="Ejemplo Tomemos el ejemplo de la Aplicación cualquiera AppGenerica.cuarzo Esta tiene las siguientes características: Contiene un HASH único, identificador...">
+    <meta name="keywords" content="concepto, distribucion, paquetes, linux, cuarzoos, cuarzo">
+    <meta property="og:title" content="Concepto de Distribución de Paquetes en CuarzoOS">
+    <meta property="og:description" content="Ejemplo Tomemos el ejemplo de la Aplicación cualquiera AppGenerica.cuarzo Esta tiene las siguientes características: Contiene un HASH único, identificador...">
+    <meta property="og:url" content="https://juanlatorre.github.io/concepto-distribucion-paquetes-cuarzoos.html">
+    <meta property="og:image" content="./images/concepto-distribucion-paquetes.webp">
+    <!--[if lte IE 8]><link rel="shortcut icon" type="image/x-icon" href="https://juanlatorre.github.io/favicon.ico" /><![endif]-->
+    <link rel="alternate" type="application/atom+xml"
+                           title="Juan Latorre — Blog — Flux Atom"
+                           href="https://juanlatorre.github.io/feeds/atom.xml" />
+
+    <meta name="author"   content="Juan Latorre" />
+    <meta name="keywords" content="concepto, distribucion, paquetes, linux, cuarzoOS, cuarzo" />
+    <link rel="stylesheet" media="not print" type="text/css" href="https://juanlatorre.github.io/theme/css/pygments.css" />
+  </head>
+  <body>
+    <div id="page">
+      <header id="page-head">
+        <h1>
+          <a href="https://juanlatorre.github.io/index.html">Juan Latorre — Blog</a>
+
+        </h1>
+      </header>
+
+      <div id="page-body">
+        <article class="post" id="page-main" role="main">
+      <header class="post-header">
+        <h1>
+          <a rel="bookmark"
+             href="https://juanlatorre.github.io/concepto-distribucion-paquetes-cuarzoos.html"
+             title="Enlace permamente a «Concepto de Distribución de Paquetes en CuarzoOS»">
+             Concepto de Distribución de Paquetes en CuarzoOS
+          </a>
+        </h1>
+        <div class="meta">
+<!-- includes/article_meta.html -->
+            <time datetime="2017-06-15T01:41:00-04:00">jue 15 junio 2017</time>
+            <!--              <br />Mots-clés:              <a rel="tag" href="https://juanlatorre.github.io/tag/concepto.html">concepto</a>,               <a rel="tag" href="https://juanlatorre.github.io/tag/distribucion.html">distribucion</a>,               <a rel="tag" href="https://juanlatorre.github.io/tag/paquetes.html">paquetes</a>,               <a rel="tag" href="https://juanlatorre.github.io/tag/linux.html">linux</a>,               <a rel="tag" href="https://juanlatorre.github.io/tag/cuarzoos.html">cuarzoOS</a>,               <a rel="tag" href="https://juanlatorre.github.io/tag/cuarzo.html">cuarzo</a>-->        </div>
+      </header>
+      <div class="post-content">
+        <h2>Ejemplo</h2>
+<p>Tomemos el ejemplo de la Aplicación cualquiera <strong>AppGenerica.cuarzo</strong>
+Esta tiene las siguientes características:</p>
+<ul>
+<li>Contiene un HASH único, identificador de aplicación, no puede ser cambiado.</li>
+<li>Es una imagen ISO, montable y solo de lectura (Read-Only).</li>
+<li>Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo.</li>
+</ul>
+<p>Ahora, esta aplicación posee la siguiente estructura interna:</p>
+<ul>
+<li>libs/<ul>
+<li>libAlgo-1.2.so</li>
+<li>libAlgo-1.3.so</li>
+<li>libOtraCosa-5.7.so</li>
+</ul>
+</li>
+<li>bin/<ul>
+<li>binarios</li>
+</ul>
+</li>
+<li>other/<ul>
+<li>Lo que sea que necesite esa app</li>
+</ul>
+</li>
+<li>AppRun</li>
+<li>zync-curl</li>
+<li>default.desktop</li>
+<li>default.png</li>
+</ul>
+<h2>Explicación</h2>
+<p>La carpeta <strong>libs</strong> contiene las librerias necesarias de la aplicación (obviando las que se incluyen en el sistema), estas librerias tiene un HASH único designado a cada archivo, al momento de correr la Aplicación por primera vez, todas estas librerias se mueven a la carpeta física <strong>/usr/share/crzlibs/</strong> donde se almacenarán las librerias externas al sistema, al comprobar que una librería ya existe, se comprueba que el HASH corresponde, de ser así se utiliza y de no ser así se reemplaza con otro nombre (Ej: <em>libAlgo-1.2-good.so</em>)</p>
+<p>La carpeta <strong>bin</strong> contiene los binarios de la aplicación</p>
+<p>La carpeta <strong>other</strong> puede contener lo que sea que esa app utilice</p>
+<p>El script <strong>AppRun</strong> es el encargado de correr el binario al montar la ISO, a la vez, cada vez que la aplicación es abierta, comprueba el HASH único de esta, si algun archivo ha sido modificado (por un externo o usuario) o está corrupto, avisa al usuario que <em>"Esta aplicación puede estar corrupta o modificada, lo que es peligroso para su equipo".</em> De ser este el caso se presentarán 4 opciones en pantalla:</p>
+<ul>
+<li>Eliminar aplicación.</li>
+<li>Autoarreglar (por medio de zync-curl se descarga el archivo corrupto de nuevo y se arregla a si misma)</li>
+<li>Abrir de todos modos (inseguro)</li>
+<li>Cancelar</li>
+</ul>
+<h2>Preferencias y archivos residuales</h2>
+<p>Cada aplicación está en la obligación de seguir las especificaciones respecto a archivos residuales. Todos los archivos que la aplicación quiera escribir en el disco, deberán escribirse en:</p>
+<div class="highlight"><pre><span></span>~/.prefs/cuarzo/APP/*
+</pre></div>
+
+
+<h2>Desinstalación o eliminación</h2>
+<p>El script <strong>AppRun</strong> además tiene la facultad de detectar cuando una aplicación se mueve se su correspondiente ubicación a la papelera, de ser así se considera eliminación y por ende elimina automáticamente todos los archivos residuales ubicados en el path mencionado posteriormente; NO así las librerias, que se mantendrán en su lugar a pesar de la eliminación de la aplicación.</p>
+      </div>
+      </article>
+        <aside id="page-side">
+          <!-- begin includes/sidebar.html -->
+          <nav>
+            21 otoños, estudiante de Ing. Civil en Informática. Decepcionado de la comunidad GNU/Linux y ligeramente adicto al café, especialmente al Vienés.<br><br>
+						<p>
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+							<a href="https://twitter.com/unnamed_query">@unnamed_query</a>
+						</p>
+						<p>
+							<i class="fa fa-github" aria-hidden="true"></i>
+							<a href="https://github.com/juanlatorre">/juanlatorre</a>
+						</p>
+						<p>
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<a href="mailto:juanlatorre@protonmail.com">juanlatorre@protonmail.com</a>
+						</p>
+						<p>
+							<i class="fa fa-key" aria.hidden="true"></i>
+							<a href="/files/publickey.txt">4D7C5582DD88F606</a>
+						</p>
+          </nav>
+
+          <nav>
+            <h3>Licencia</h3>
+            <p>El contenido de este blog se rige por <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>. El código del blog se rige por <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GLPv3</a>.</p>
+            
+            <a style="text-align:center;display:block;" href="https://juanlatorre.github.io/feeds/atom.xml"><i class="fa fa-rss-square fa-2x" aria-hidden="true"></i></a>
+          </nav>
+          <!-- end includes/sidebar.html --></aside>
+      </div>
+
+      <footer id="page-foot">
+        <p> Creado con <a href="https://blog.getpelican.com/">Pelican</a></p>
+      </footer>
+    </div> <!-- /#page -->
+  </body>
+</html>
