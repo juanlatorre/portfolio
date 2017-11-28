@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Redirecting...</title>
+		<meta http-equiv="refresh" content="0;url=https://juanlatorre.github.io/feed/">
+	</head>
+	<body>
+		<script type="text/javascript">
+			window.location = "https://juanlatorre.github.io/feed/";
+		</script>
+
+		<p>You are being redirected to <a href="https://juanlatorre.github.io/feed/">https://juanlatorre.github.io/feed/</a></p>
+	</body>
+</html>
