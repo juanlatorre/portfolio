@@ -34,148 +34,25 @@
 	</nav>
 
 	<div class="container">
-		<div class="row mb-5 mt-3 mx-auto d-block text-center">
-			<div class="col-xs-12">
-				<button type="button" class="btn btn-dark filter-btn mb-2" data-filter="todo">Todo</button>
-				<button type="button" class="btn btn-dark filter-btn mb-2" data-filter="diseno-web">Diseño Web</button>
-				<button type="button" class="btn btn-dark filter-btn mb-2" data-filter="admin">Administración</button>
-				<button type="button" class="btn btn-dark filter-btn mb-2" data-filter="software">Software</button>
-				<button type="button" class="btn btn-dark filter-btn mb-2" data-filter="games">Videojuegos</button>
+		<form class="mt-5" action="https://formspree.io/juanlatorre@protonmail.com">
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input type="text" class="form-control" id="nombre" name="nombre" placeholder="" required>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web admin">
-				<div class="card">
-					<a href="http://caboblanco.cl/"><img class="card-img-top" src="img/caboblanco.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://caboblanco.cl/">Cabo Blanco</a>
-						</h4>
-					</div>
-				</div>
+			<div class="form-group">
+				<label for="correo">Correo</label>
+				<input type="email" class="form-control" id="correo" name="correo" placeholder="" required>
 			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web admin">
-				<div class="card">
-					<a href="http://ceachile.cl/nandu/"><img class="card-img-top" src="img/nandu.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://ceachile.cl/nandu/">Ñandú del Sur</a>
-						</h4>
-					</div>
-				</div>
+			<div class="form-group">
+				<label for="asunto">Asunto</label>
+				<input type="text" class="form-control" id="asunto" name="asunto" placeholder="" required>
 			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web admin">
-				<div class="card">
-					<a href="http://ceachile.cl/revista/"><img class="card-img-top" src="img/gestion-ambiental.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://ceachile.cl/revista/">Gestión Ambiental</a>
-						</h4>
-					</div>
-				</div>
+			<div class="form-group">
+				<label for="asunto">Mensaje</label>
+				<textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
 			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web admin">
-				<div class="card">
-					<a href="http://tepu.cl/"><img class="card-img-top" src="img/tepu.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://tepu.cl/">Ambiente</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web admin">
-				<div class="card">
-					<a href="http://obispadodevaldivia.cl"><img class="card-img-top" src="img/obispado.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://obispadodevaldivia.cl">Obispado de Valdivia</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter diseno-web">
-				<div class="card">
-					<a href="http://guidobarbet.com/"><img class="card-img-top" src="img/guidobarbet.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://guidobarbet.com/">Guido Barbet</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter admin">
-				<div class="card">
-					<a href="http://ceachile.cl/"><img class="card-img-top" src="img/ceachile.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://ceachile.cl/">CEA Chile</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter admin">
-				<div class="card">
-					<a href="http://lacteoscalafquen.cl/"><img class="card-img-top" src="img/lacteos-calafquen.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="http://lacteoscalafquen.cl/">Lácteos Calafquén</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter software">
-				<div class="card">
-					<img class="card-img-top" src="img/boleteria.png" alt="">
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							Boletería Pub/Disco
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter games">
-				<div class="card">
-					<a href="https://globalgamejam.org/2017/games/immerse"><img class="card-img-top" src="img/immerse.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="https://globalgamejam.org/2017/games/immerse">Immerse</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter games">
-				<div class="card">
-					<img class="card-img-top" src="img/chilerunner.png" alt="">
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							Chile Runner
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter games">
-				<div class="card">
-					<a href="https://globalgamejam.org/2015/games/dentro"><img class="card-img-top" src="img/dentro.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="https://globalgamejam.org/2015/games/dentro">Dentro</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item filter games">
-				<div class="card">
-					<a href="https://globalgamejam.org/2018/games/demon-recruiter"><img class="card-img-top" src="img/demon.png" alt=""></a>
-					<div class="card-body">
-						<h4 class="card-title text-center">
-							<a href="https://globalgamejam.org/2018/games/demon-recruiter">Demon Recruiter</a>
-						</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- /.row -->
+			<button type="submit" class="btn btn-dark">Enviar</button>
+		</form>
 	</div>
 
 	<footer>
