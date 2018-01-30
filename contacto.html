@@ -34,25 +34,27 @@
 	</nav>
 
 	<div class="container">
-		<form class="mt-5" method="POST" action="https://formspree.io/juanlatorre@protonmail.com">
+		<form name="gform" id="gform" enctype="text/plain" class="mt-5" action="https://docs.google.com/forms/d/e/1FAIpQLSe6wkq8Z4Lrg1qXC2PDs_XEY2nq1HGsj07_BuLEkIaJXQuiCQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
 			<div class="form-group">
 				<label for="nombre">Nombre</label>
-				<input type="text" class="form-control" id="nombre" name="nombre" placeholder="" required>
+				<input type="text" class="form-control" id="entry.62320971" name="entry.62320971" placeholder="" required>
 			</div>
 			<div class="form-group">
 				<label for="correo">Correo</label>
-				<input type="email" class="form-control" id="correo" name="correo" placeholder="" required>
+				<input type="email" class="form-control" id="entry.146352825" name="entry.146352825" placeholder="" required>
 			</div>
 			<div class="form-group">
 				<label for="asunto">Asunto</label>
-				<input type="text" class="form-control" id="asunto" name="asunto" placeholder="" required>
+				<input type="text" class="form-control" id="entry.538993029" name="entry.538993029" placeholder="" required>
 			</div>
 			<div class="form-group">
 				<label for="asunto">Mensaje</label>
-				<textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+				<textarea class="form-control" id="entry.1390416851" name="entry.1390416851" rows="3"></textarea>
 			</div>
 			<button type="submit" class="btn btn-dark">Enviar</button>
 		</form>
+
+		<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 	</div>
 
 	<footer>
@@ -68,27 +70,12 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<script>
-		$(document).ready(function(){
-			$(".filter-btn").click(function(){
-				var value = $(this).attr('data-filter');
-				if(value == "todo") {
-					//$('.filter').removeClass('hidden');
-					$('.filter').show('1000');
-				} else {
-					//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-        			//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-        			$(".filter").not('.'+value).hide('3000');
-        			$('.filter').filter('.'+value).show('3000');
-        		}
-        	});
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+		$('#gform *').fadeOut(2000);
+		$('#gform').prepend('Tu mensaje fue enviado...');
+	});
+</script>
 
-			if ($(".filter-btn").removeClass("active")) {
-				$(this).removeClass("active");
-			}
-			$(this).addClass("active");
-
-		});
-	</script>
 </body>
 </html>
