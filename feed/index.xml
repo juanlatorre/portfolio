@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Juan Latorre — blog personal</title>
+	<atom:link href="http://juanlatorre.cl/feed/" rel="self" type="application/rss+xml" />
+	<link>http://juanlatorre.cl</link>
+	<description>Blog personal, ideas, productos y demases.</description>
+	<lastBuildDate>Thu, 01 Feb 2018 15:19:19 +0000</lastBuildDate>
+	<language>es-ES</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.2</generator>
+	<item>
+		<title>Bye Pelican, Hola WordPress</title>
+		<link>http://juanlatorre.cl/2018/02/01/bye-pelican-hola-wordpress/</link>
+		<comments>http://juanlatorre.cl/2018/02/01/bye-pelican-hola-wordpress/#respond</comments>
+		<pubDate>Thu, 01 Feb 2018 15:17:48 +0000</pubDate>
+		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[juanlatorre]]></category>
+		<category><![CDATA[pelican]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">http://juanlatorre.cl/?p=16</guid>
+		<description><![CDATA[Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas entradas no era lo suficientemente rápido como para quedar satisfecho, así fue como investigando y haciendo zapping digital me encontré con un plugin llamado Simply Static que aclamaba generar una copia exacta del sitio en cuestión como una copia estática, sonaba perfecto para subir a Github Pages, así que me animé a probarlo. Después de un par de pruebas [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas entradas no era lo suficientemente rápido como para quedar satisfecho, así fue como investigando y haciendo <em>zapping </em>digital me encontré con un plugin llamado <a href="https://cl.wordpress.org/plugins/simply-static/"><strong>Simply Static</strong></a> que aclamaba generar una copia exacta del sitio en cuestión como una copia estática, sonaba perfecto para subir a Github Pages, así que me animé a probarlo.</p>
+<p>Después de un par de pruebas noté que funcionaba perfecto, basicamente, al apretar el botón de <strong>generar</strong> (y modificar un poco los ajustes a gusto), se genera una copia estática en la carpeta a elección, así que decidido a utilizar wordpress en un servidor local para generar el blog, me puse manos a la obra &#8220;portando&#8221; el tema que había construído en Pelican para pasarlo a WordPress, después de un par de ajustes y unas horas de color testing el resultado que más me gustó vio la luz.</p>
+<p><img class="aligncenter wp-image-18" src="http://juanlatorre.cl/wp-content/uploads/2018/02/blog-image-1024x480.png" alt="" width="800" height="375" srcset="http://juanlatorre.cl/wp-content/uploads/2018/02/blog-image-1024x480.png 1024w, http://juanlatorre.cl/wp-content/uploads/2018/02/blog-image-300x141.png 300w, http://juanlatorre.cl/wp-content/uploads/2018/02/blog-image-768x360.png 768w, http://juanlatorre.cl/wp-content/uploads/2018/02/blog-image.png 1352w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Sin embargo tenía ciertos problemas, como era de esperar el funcionamiento de algunos plugins se vio alterado, por ejemplo <strong><a href="https://wordpress.org/plugins/contact-form-7/">Contact Form 7</a> </strong>dejó de funcionar, así que comenzó la búsqueda de lograr una forma estática de enviar correos a través de un formulario de contacto web, pero eso queda para otro post.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://juanlatorre.cl/2018/02/01/bye-pelican-hola-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Paquetes en CuarzoOS</title>
+		<link>http://juanlatorre.cl/2017/06/15/paquetes-en-cuarzoos/</link>
+		<comments>http://juanlatorre.cl/2017/06/15/paquetes-en-cuarzoos/#respond</comments>
+		<pubDate>Thu, 15 Jun 2017 15:01:56 +0000</pubDate>
+		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[appimage]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[concepto]]></category>
+		<category><![CDATA[cuarzoOS]]></category>
+		<category><![CDATA[ideas]]></category>
+		<category><![CDATA[sistema operativo]]></category>
+
+		<guid isPermaLink="false">http://juanlatorre.cl/?p=7</guid>
+		<description><![CDATA[Ejemplo Tomemos el ejemplo de la Aplicación cualquiera AppGenerica.cuarzo Esta tiene las siguientes características: Contiene un HASH único, identificador de aplicación, no puede ser cambiado. Es una imagen ISO, montable y solo de lectura (Read-Only). Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo. Ahora, esta aplicación posee la siguiente estructura interna: libs/ libAlgo-1.2.so libAlgo-1.3.so libOtraCosa-5.7.so bin/ binarios other/ Lo que sea que [&#8230;]]]></description>
+				<content:encoded><![CDATA[<h2>Ejemplo</h2>
+<p>Tomemos el ejemplo de la Aplicación cualquiera <strong>AppGenerica.cuarzo</strong><br />
+Esta tiene las siguientes características:</p>
+<ul>
+<li>Contiene un HASH único, identificador de aplicación, no puede ser cambiado.</li>
+<li>Es una imagen ISO, montable y solo de lectura (Read-Only).</li>
+<li>Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo.</li>
+</ul>
+<p>Ahora, esta aplicación posee la siguiente estructura interna:</p>
+<ul>
+<li>libs/
+<ul>
+<li>libAlgo-1.2.so</li>
+<li>libAlgo-1.3.so</li>
+<li>libOtraCosa-5.7.so</li>
+</ul>
+</li>
+<li>bin/
+<ul>
+<li>binarios</li>
+</ul>
+</li>
+<li>other/
+<ul>
+<li>Lo que sea que necesite esa app</li>
+</ul>
+</li>
+<li>AppRun</li>
+<li>zync-curl</li>
+<li>default.desktop</li>
+<li>default.png</li>
+</ul>
+<h2>Explicación</h2>
+<p>La carpeta <strong>libs</strong> contiene las librerias necesarias de la aplicación (obviando las que se incluyen en el sistema), estas librerias tiene un HASH único designado a cada archivo, al momento de correr la Aplicación por primera vez, todas estas librerias se mueven a la carpeta física <strong>/usr/share/crzlibs/</strong> donde se almacenarán las librerias externas al sistema, al comprobar que una librería ya existe, se comprueba que el HASH corresponde, de ser así se utiliza y de no ser así se reemplaza con otro nombre (Ej: <em>libAlgo-1.2-good.so</em>)</p>
+<p>La carpeta <strong>bin</strong> contiene los binarios de la aplicación</p>
+<p>La carpeta <strong>other</strong> puede contener lo que sea que esa app utilice</p>
+<p>El script <strong>AppRun</strong> es el encargado de correr el binario al montar la ISO, a la vez, cada vez que la aplicación es abierta, comprueba el HASH único de esta, si algun archivo ha sido modificado (por un externo o usuario) o está corrupto, avisa al usuario que <em>&#8220;Esta aplicación puede estar corrupta o modificada, lo que es peligroso para su equipo&#8221;.</em> De ser este el caso se presentarán 4 opciones en pantalla:</p>
+<ul>
+<li>Eliminar aplicación.</li>
+<li>Autoarreglar (por medio de zync-curl se descarga el archivo corrupto de nuevo y se arregla a si misma)</li>
+<li>Abrir de todos modos (inseguro)</li>
+<li>Cancelar</li>
+</ul>
+<h2>Preferencias y archivos residuales</h2>
+<p>Cada aplicación está en la obligación de seguir las especificaciones respecto a archivos residuales. Todos los archivos que la aplicación quiera escribir en el disco, deberán escribirse en:</p>
+<p><code>~/.prefs/cuarzo/APP/*</code></p>
+<h2>Desinstalación o eliminación</h2>
+<p>El script <strong>AppRun</strong> además tiene la facultad de detectar cuando una aplicación se mueve se su correspondiente ubicación a la papelera, de ser así se considera eliminación y por ende elimina automáticamente todos los archivos residuales ubicados en el path mencionado posteriormente; NO así las librerias, que se mantendrán en su lugar a pesar de la eliminación de la aplicación.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://juanlatorre.cl/2017/06/15/paquetes-en-cuarzoos/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Pelican &#038; Github</title>
+		<link>http://juanlatorre.cl/2017/05/10/pelican-github/</link>
+		<comments>http://juanlatorre.cl/2017/05/10/pelican-github/#respond</comments>
+		<pubDate>Wed, 10 May 2017 22:35:51 +0000</pubDate>
+		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[pelican]]></category>
+		<category><![CDATA[python]]></category>
+		<category><![CDATA[python3]]></category>
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">http://juanlatorre.cl/?p=4</guid>
+		<description><![CDATA[En este primer post en el blog, contaré todo el proceso de su creación utilizando Pelican y Github Pages. Antes de comenzar con el contenido real, a repasar conceptos. ¿Qué es Pelican? Pelican, es un static site generator escrito en Python, no requiere base de datos ni lógica del lado del servidor. Algunas características que incluye son: Escribe tu contenido en reStructuredText, Markdown o AsciiDoc Compilar contenido completamente estático Temas editables con Jinja Soporte para multi lenguaje Atom/RSS Feed Resaltado [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>En este primer post en el blog, contaré todo el proceso de su creación utilizando <strong>Pelican</strong> y <strong>Github Pages</strong>.<br />
+Antes de comenzar con el contenido real, a repasar conceptos.</p>
+<h2>¿Qué es Pelican?</h2>
+<p>Pelican, es un <em>static site generator</em> escrito en Python, no requiere base de datos ni lógica del lado del servidor.</p>
+<p>Algunas características que incluye son:</p>
+<ul>
+<li>Escribe tu contenido en <strong>reStructuredText</strong>, <strong>Markdown</strong> o <strong>AsciiDoc</strong></li>
+<li>Compilar contenido completamente estático</li>
+<li>Temas editables con <strong>Jinja</strong></li>
+<li>Soporte para multi lenguaje</li>
+<li>Atom/RSS Feed</li>
+<li>Resaltado de código</li>
+<li>Importar contenido desde Wordpres, Dotclear, RSS feeds, entre otros.</li>
+<li>Sistema de plugins modulares.</li>
+</ul>
+<p>Es un generador muy potente y a la vez muy simple, en el fondo <strong>it gets the job done</strong>.</p>
+<h2>Instalación y Configuración</h2>
+<p>Primero debemos instalar las herramientas, dependiendo de tu version de Python elige una.</p>
+<pre><code>$ sudo -H pip install pelican
+$ sudo -H pip3 install pelican
+</code></pre>
+<p>Teniendo una cuenta en github, es necesario crear dos repositorios.</p>
+<blockquote><p>usuario.github.io-src</p>
+<p>usuario.github.io</p></blockquote>
+<p><em>usuario.github.io-src</em> será el encargado de contener el generador para luego compilar el blog y subir la parte estática al repo <em>usuario.github.io</em>.</p>
+<p>Para que esto sea posible tenemos que incluir el repositorio <em>usuario.github.io</em> como <a href="https://git-scm.com/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos">submódulo</a> del repositorio <em>usuario.github.io-src</em>.</p>
+<pre><code>$ git clone git@github.com:usuario/usuario.github.io-src.git
+$ cd usuario.github.io-src
+$ git submodule add git@github.com:usuario/usuario.github.io.git output
+</code></pre>
+<p>Ahora que tenemos listos los repositorios necesarios y el submódulo, podemos comenzar con la herramienta de Pelican para generar el blog.</p>
+<p><code>$ pelican-quickstart</code></p>
+<p>Esta herramienta nos hará varias preguntas iniciales, las que importan son:</p>
+<ul>
+<li>Where do you want to create your new web site? <strong>(Enter)</strong></li>
+<li>URL prefix: <strong>https://usuario.github.io/</strong></li>
+<li>Generate a Fabfile/Makefile: <strong>Yes</strong></li>
+<li>Upload mechanisms: <strong>Elegir No para todo menos Github Pages</strong></li>
+<li>Is this your personal page (usuario.github.io)?: <strong>Yes</strong></li>
+</ul>
+<p>Con esto la configuración inicial queda terminada, para editar el archivo de configuración haremos:</p>
+<p><code>$ vim pelicanconf.py</code></p>
+<p>Dentro podremos encontrar la variable <code>DELETE_OUTPUT_DIRECTORY = True</code>, debemos modificarlo para que sea falso: <code>DELETE_OUTPUT_DIRECTORY = False</code>.<br />
+Esto evitará que se borre el contenido de la carpeta <em>output</em> cada vez que compilemos.</p>
+<h2>Creando contenido</h2>
+<p>Actualmente nuestra estructura de archivos queda parecida a esto:</p>
+<pre><code>usuario.github.io-src
+│   develop_server.sh
+│   fabfile.py
+│   LICENSE
+│   Makefile
+│   pelicanconf.py
+│   publishconf.py
+│
+└───content
+│
+└───output
+</code></pre>
+<blockquote><p>Además puedes crear las carpetas <em>plugins</em> y <em>themes</em>, para más info respecto a esto mirar los docs sobre <a href="http://docs.getpelican.com/en/stable/pelican-themes.html">temas</a> y <a href="http://docs.getpelican.com/en/stable/plugins.html">plugins</a>.</p></blockquote>
+<p>Para escribir nuestro primer post, vamos a crear un archivo <strong>markdown</strong> en la carpeta <em>content</em>.</p>
+<p><code>$ touch content/primer-post.md</code></p>
+<p>Dentro de este archivo, pondremos lo siguiente:</p>
+<div class="highlight">
+<pre><span class="n">Title</span><span class="o">:</span> <span class="n">Título</span> <span class="n">del</span> <span class="n">Post</span>
+<span class="n">Date</span><span class="o">:</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">Modified</span><span class="o">:</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span> <span class="n">HH</span><span class="o">:</span><span class="n">MM</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">Categoría</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">Etiquetas</span><span class="o">,</span> <span class="n">separadas</span><span class="o">,</span> <span class="n">por</span><span class="o">,</span> <span class="n">coma</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">url</span><span class="o">-</span><span class="n">del</span><span class="o">-</span><span class="n">post</span>
+<span class="n">Author</span><span class="o">:</span> <span class="n">Nombre</span> <span class="n">del</span> <span class="n">Autor</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Resumen</span> <span class="n">del</span> <span class="n">contenido</span> <span class="n">del</span> <span class="n">post</span><span class="o">.</span>
+
+<span class="n">Aquí</span> <span class="n">ya</span> <span class="n">puedo</span> <span class="n">comenzar</span> <span class="n">a</span> <span class="n">escribir</span> <span class="n">el</span> <span class="n">contenido</span> <span class="n">del</span> <span class="n">post</span> <span class="n">en</span> <span class="n">Markdown</span><span class="o">.</span>
+</pre>
+</div>
+<p>Una vez que hemos creado nuestro primer post, podemos pasar a compilar.</p>
+<h2>Generando el sitio</h2>
+<p>Para generar el sitio tenemos varias <a href="http://docs.getpelican.com/en/stable/publish.html">opciones</a>, yo utilizo el comando ~~~make~~~.</p>
+<p>Primero debemos compilar el markdown en html plano, para eso:</p>
+<p><code>$ make html</code></p>
+<p>Esto generará contenido estático en la carpeta <em>output</em>, para comprobar si el blog funciona:</p>
+<p><code>$ make serve</code></p>
+<p>Abrirá un servidor en <a href="http://localhost:8000/">localhost:8000</a>.</p>
+<p>Si tu blog funciona perfectamente, es hora de publicarlo y hacer <em>commit y push</em> al repositorio que agregamos como <em>submódulo</em> en la carpeta <em>output</em>:</p>
+<pre><code>
+  $ make publish
+  $ cd output
+  $ git add .
+  $ git commit -m "Primer post" &lt;--  usuario.github.io
+  $ git push origin master
+  $ cd ..
+  $ git add .
+  $ git commit -m "Primer commit"  &lt;-- usuario.github.io-src
+  $ git push origin master
+</code></pre>
+<p>Ahora puedes visitar <a href="https://usuario.github.io/">usuario.github.io</a> y disfrutar del blog que acabas de crear.</p>
+<h2>Fin</h2>
+<p>Al final me dio flojera terminar el post, tenía pensado agregar una sección de cómo implementé el <strong>tema</strong> del blog y los <strong>plugins</strong> que estoy usando, así como <strong>uno que otro</strong> tip y script que hice para que todo sea más fluido, pero creo que todo eso quedará para otro día si ando con ganas de escribir un poco más.</p>
+<p>Si tienes alguna duda o comentario, o quieres saber más detalle de como crear un blog con <strong>Pelican</strong> puedes consultarme por Twitter o Email. Ando buscando una forma de generar comentarios estáticos sin depender de un servicio externo, creo que <a href="https://github.com/getpelican/pelican-plugins/tree/master/pelican_comment_system">pelican-comment-system</a> es la solución pero no me he dado el tiempo de implementarlo, de todas formas si lo logro antes del post sobre plugins, fijo que estará el <em>como implementar</em>. Chao pescao.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://juanlatorre.cl/2017/05/10/pelican-github/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
