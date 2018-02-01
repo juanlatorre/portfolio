@@ -9,18 +9,41 @@
 
 <channel>
 	<title>Blog &#8211; Juan Latorre — blog personal</title>
-	<atom:link href="https://juanlatorre.github.io/category/blog/feed/" rel="self" type="application/rss+xml" />
-	<link>https://juanlatorre.github.io</link>
+	<atom:link href="http://juanlatorre.cl/blog/category/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>http://juanlatorre.cl/blog</link>
 	<description>Blog personal, ideas, productos y demases.</description>
-	<lastBuildDate>Tue, 28 Nov 2017 15:20:39 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 01 Feb 2018 15:19:19 +0000</lastBuildDate>
 	<language>es-ES</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.9</generator>
+	<generator>https://wordpress.org/?v=4.9.2</generator>
 	<item>
+		<title>Bye Pelican, Hola WordPress</title>
+		<link>http://juanlatorre.cl/blog/2018/02/01/bye-pelican-hola-wordpress/</link>
+		<comments>http://juanlatorre.cl/blog/2018/02/01/bye-pelican-hola-wordpress/#respond</comments>
+		<pubDate>Thu, 01 Feb 2018 15:17:48 +0000</pubDate>
+		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[blog]]></category>
+		<category><![CDATA[github]]></category>
+		<category><![CDATA[juanlatorre]]></category>
+		<category><![CDATA[pelican]]></category>
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">http://juanlatorre.cl/blog/?p=16</guid>
+		<description><![CDATA[Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas entradas no era lo suficientemente rápido como para quedar satisfecho, así fue como investigando y haciendo zapping digital me encontré con un plugin llamado Simply Static que aclamaba generar una copia exacta del sitio en cuestión como una copia estática, sonaba perfecto para subir a Github Pages, así que me animé a probarlo. Después de un par de pruebas [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas entradas no era lo suficientemente rápido como para quedar satisfecho, así fue como investigando y haciendo <em>zapping </em>digital me encontré con un plugin llamado <a href="https://cl.wordpress.org/plugins/simply-static/"><strong>Simply Static</strong></a> que aclamaba generar una copia exacta del sitio en cuestión como una copia estática, sonaba perfecto para subir a Github Pages, así que me animé a probarlo.</p>
+<p>Después de un par de pruebas noté que funcionaba perfecto, basicamente, al apretar el botón de <strong>generar</strong> (y modificar un poco los ajustes a gusto), se genera una copia estática en la carpeta a elección, así que decidido a utilizar wordpress en un servidor local para generar el blog, me puse manos a la obra &#8220;portando&#8221; el tema que había construído en Pelican para pasarlo a WordPress, después de un par de ajustes y unas horas de color testing el resultado que más me gustó vio la luz.</p>
+<p><img class="aligncenter wp-image-18" src="http://juanlatorre.cl/blog/wp-content/uploads/2018/02/blog-image-1024x480.png" alt="" width="800" height="375" srcset="http://juanlatorre.cl/blog/wp-content/uploads/2018/02/blog-image-1024x480.png 1024w, http://juanlatorre.cl/blog/wp-content/uploads/2018/02/blog-image-300x141.png 300w, http://juanlatorre.cl/blog/wp-content/uploads/2018/02/blog-image-768x360.png 768w, http://juanlatorre.cl/blog/wp-content/uploads/2018/02/blog-image.png 1352w" sizes="(max-width: 800px) 100vw, 800px" /></p>
+<p>Sin embargo tenía ciertos problemas, como era de esperar el funcionamiento de algunos plugins se vio alterado, por ejemplo <strong><a href="https://wordpress.org/plugins/contact-form-7/">Contact Form 7</a> </strong>dejó de funcionar, así que comenzó la búsqueda de lograr una forma estática de enviar correos a través de un formulario de contacto web, pero eso queda para otro post.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://juanlatorre.cl/blog/2018/02/01/bye-pelican-hola-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
 		<title>Paquetes en CuarzoOS</title>
-		<link>https://juanlatorre.github.io/2017/06/15/paquetes-en-cuarzoos/</link>
-		<comments>https://juanlatorre.github.io/2017/06/15/paquetes-en-cuarzoos/#respond</comments>
+		<link>http://juanlatorre.cl/blog/2017/06/15/paquetes-en-cuarzoos/</link>
+		<comments>http://juanlatorre.cl/blog/2017/06/15/paquetes-en-cuarzoos/#respond</comments>
 		<pubDate>Thu, 15 Jun 2017 15:01:56 +0000</pubDate>
 		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
 				<category><![CDATA[Blog]]></category>
@@ -31,7 +54,7 @@
 		<category><![CDATA[ideas]]></category>
 		<category><![CDATA[sistema operativo]]></category>
 
-		<guid isPermaLink="false">https://juanlatorre.github.io/?p=7</guid>
+		<guid isPermaLink="false">http://juanlatorre.cl/blog/?p=7</guid>
 		<description><![CDATA[Ejemplo Tomemos el ejemplo de la Aplicación cualquiera AppGenerica.cuarzo Esta tiene las siguientes características: Contiene un HASH único, identificador de aplicación, no puede ser cambiado. Es una imagen ISO, montable y solo de lectura (Read-Only). Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo. Ahora, esta aplicación posee la siguiente estructura interna: libs/ libAlgo-1.2.so libAlgo-1.3.so libOtraCosa-5.7.so bin/ binarios other/ Lo que sea que [&#8230;]]]></description>
 				<content:encoded><![CDATA[<h2>Ejemplo</h2>
 <p>Tomemos el ejemplo de la Aplicación cualquiera <strong>AppGenerica.cuarzo</strong><br />
@@ -82,13 +105,13 @@ Esta tiene las siguientes características:</p>
 <h2>Desinstalación o eliminación</h2>
 <p>El script <strong>AppRun</strong> además tiene la facultad de detectar cuando una aplicación se mueve se su correspondiente ubicación a la papelera, de ser así se considera eliminación y por ende elimina automáticamente todos los archivos residuales ubicados en el path mencionado posteriormente; NO así las librerias, que se mantendrán en su lugar a pesar de la eliminación de la aplicación.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://juanlatorre.github.io/2017/06/15/paquetes-en-cuarzoos/feed/</wfw:commentRss>
+			<wfw:commentRss>http://juanlatorre.cl/blog/2017/06/15/paquetes-en-cuarzoos/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 		<item>
 		<title>Pelican &#038; Github</title>
-		<link>https://juanlatorre.github.io/2017/05/10/pelican-github/</link>
-		<comments>https://juanlatorre.github.io/2017/05/10/pelican-github/#respond</comments>
+		<link>http://juanlatorre.cl/blog/2017/05/10/pelican-github/</link>
+		<comments>http://juanlatorre.cl/blog/2017/05/10/pelican-github/#respond</comments>
 		<pubDate>Wed, 10 May 2017 22:35:51 +0000</pubDate>
 		<dc:creator><![CDATA[juanlatorre]]></dc:creator>
 				<category><![CDATA[Blog]]></category>
@@ -99,7 +122,7 @@ Esta tiene las siguientes características:</p>
 		<category><![CDATA[python3]]></category>
 		<category><![CDATA[tutorial]]></category>
 
-		<guid isPermaLink="false">https://juanlatorre.github.io/?p=4</guid>
+		<guid isPermaLink="false">http://juanlatorre.cl/blog/?p=4</guid>
 		<description><![CDATA[En este primer post en el blog, contaré todo el proceso de su creación utilizando Pelican y Github Pages. Antes de comenzar con el contenido real, a repasar conceptos. ¿Qué es Pelican? Pelican, es un static site generator escrito en Python, no requiere base de datos ni lógica del lado del servidor. Algunas características que incluye son: Escribe tu contenido en reStructuredText, Markdown o AsciiDoc Compilar contenido completamente estático Temas editables con Jinja Soporte para multi lenguaje Atom/RSS Feed Resaltado [&#8230;]]]></description>
 				<content:encoded><![CDATA[<p>En este primer post en el blog, contaré todo el proceso de su creación utilizando <strong>Pelican</strong> y <strong>Github Pages</strong>.<br />
 Antes de comenzar con el contenido real, a repasar conceptos.</p>
@@ -201,7 +224,7 @@ Esto evitará que se borre el contenido de la carpeta <em>output</em> cada vez q
 <p>Al final me dio flojera terminar el post, tenía pensado agregar una sección de cómo implementé el <strong>tema</strong> del blog y los <strong>plugins</strong> que estoy usando, así como <strong>uno que otro</strong> tip y script que hice para que todo sea más fluido, pero creo que todo eso quedará para otro día si ando con ganas de escribir un poco más.</p>
 <p>Si tienes alguna duda o comentario, o quieres saber más detalle de como crear un blog con <strong>Pelican</strong> puedes consultarme por Twitter o Email. Ando buscando una forma de generar comentarios estáticos sin depender de un servicio externo, creo que <a href="https://github.com/getpelican/pelican-plugins/tree/master/pelican_comment_system">pelican-comment-system</a> es la solución pero no me he dado el tiempo de implementarlo, de todas formas si lo logro antes del post sobre plugins, fijo que estará el <em>como implementar</em>. Chao pescao.</p>
 ]]></content:encoded>
-			<wfw:commentRss>https://juanlatorre.github.io/2017/05/10/pelican-github/feed/</wfw:commentRss>
+			<wfw:commentRss>http://juanlatorre.cl/blog/2017/05/10/pelican-github/feed/</wfw:commentRss>
 		<slash:comments>0</slash:comments>
 		</item>
 	</channel>
