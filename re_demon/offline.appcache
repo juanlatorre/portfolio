@@ -1,5 +1,5 @@
 ﻿CACHE MANIFEST
-#1517585442
+#1517595082
 data.js
 c2runtime.js
 jquery-2.1.1.min.js
@@ -12,12 +12,14 @@ images/obj_floor-sheet0.png
 images/obj_stairs-sheet0.png
 images/obj_solid-sheet0.png
 images/obj_player-sheet0.png
+images/obj_player-sheet1.png
 images/obj_weapons-sheet0.png
 images/obj_door_blocked-sheet0.png
 images/obj_door-sheet0.png
 images/obj_bullet-sheet0.png
 images/obj_crosshair-sheet0.png
 images/obj_hud_bg-sheet0.png
+images/obj_enemy-sheet0.png
 media/disparo%20escopeta.ogg
 media/disparo%20pistola.ogg
 media/escalera%20un%20paso.ogg
@@ -33,5 +35,6 @@ icon-114.png
 icon-128.png
 icon-256.png
 loading-logo.png
+pathfind.js
 NETWORK:
 *

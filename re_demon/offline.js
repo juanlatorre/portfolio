@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1517585442,
+	"version": 1517595082,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -13,12 +13,14 @@
 		"images/obj_stairs-sheet0.png",
 		"images/obj_solid-sheet0.png",
 		"images/obj_player-sheet0.png",
+		"images/obj_player-sheet1.png",
 		"images/obj_weapons-sheet0.png",
 		"images/obj_door_blocked-sheet0.png",
 		"images/obj_door-sheet0.png",
 		"images/obj_bullet-sheet0.png",
 		"images/obj_crosshair-sheet0.png",
 		"images/obj_hud_bg-sheet0.png",
+		"images/obj_enemy-sheet0.png",
 		"media/disparo escopeta.ogg",
 		"media/disparo pistola.ogg",
 		"media/escalera un paso.ogg",
@@ -33,6 +35,7 @@
 		"icon-114.png",
 		"icon-128.png",
 		"icon-256.png",
-		"loading-logo.png"
+		"loading-logo.png",
+		"pathfind.js"
 	]
 }
