@@ -78,7 +78,7 @@ td {
 	font-size: 1rem;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 769px) {
     .dia-corto {
     	display: inline-block;
     }
