@@ -1,5 +1,4 @@
 // un par de globales
-let GrupoClases = []
 let DBAsignaturas
 
 let agregarDatos = (id) => {
@@ -8,7 +7,7 @@ let agregarDatos = (id) => {
 	let gruposEncontrados = Object.keys(encontrado.grupos).find((e) => e === g)
 	encontrado.grupos[gruposEncontrados].forEach((clase) => {
 		document.getElementById("tabla-horario").rows[clase.periodo].cells[clase.dia].innerHTML += `
-			<div class="${id} has-background-success has-text-white">
+			<div class="${id} clase has-background-success has-text-white">
 				<b>${c}</b>
 				<br>
 				<span>${clase.sala}</span>
@@ -65,32 +64,7 @@ $.getJSON("asignaturas.json", (data) => {
 		for (var grupo in ramo.grupos) {
 			let grupito = grupo.split('_').join(' ')
 			let codigoMasGrupo = ramo.codigo + "-" + grupo
-			// Primero, recorremos cada grupo en ramo.grupos y copiamos el arreglo de su contenido en un arreglo temporal.
-			// EJ: ramo.grupos.Grupo_1 == arregloTemporal
-			//
-			// Ahora creamos el objetoTemporal y le agregamos el arregloTemporal, para posteriormente, meterlo en el arreglo GrupoClases.
-			//
-			// var objetoTemporal = {}
-			//
-			// {
-			//	 "codigomasgrupo": []
-			// }
 
-			var objetoTemporal = {
-				[codigoMasGrupo]: [
-				{
-					"dia": "3",
-					"periodo": "3",
-					"sala": "7101"
-				},
-				{
-					"dia": "4",
-					"periodo": "1",
-					"sala": "2208"
-				}
-				]
-			}
-			GrupoClases.push()
 			$("#lista-de-asignaturas").append(`
 				<div class="box">
 					<div class="columns">

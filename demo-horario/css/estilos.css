@@ -70,6 +70,29 @@ td {
 	display: none !important;
 }
 
+.dia-corto {
+	display: none;
+}
+
+.clase {
+	font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+    .dia-corto {
+    	display: inline-block;
+    }
+
+    .dia-largo {
+    	display: none;
+    }
+
+    .clase {
+    	font-size: 0.8rem;
+    }
+
+}
+
 @media print {
 	nav {
 		display: none;

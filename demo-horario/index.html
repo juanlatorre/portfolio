@@ -44,16 +44,31 @@
 			<thead class="column-text-center">
 				<tr>
 					<th></th>
-					<th>Lunes</th>
-					<th>Martes</th>
-					<th>Miércoles</th>
-					<th>Jueves</th>
-					<th>Viernes</th>
+					<th>
+						<span class="dia-largo">Lunes</span>
+						<span class="dia-corto">Lun</span>
+					</th>
+					<th>
+						<span class="dia-largo">Martes</span>
+						<span class="dia-corto">Mar</span>
+					</th>
+					<th>
+						<span class="dia-largo">Miércoles</span>
+						<span class="dia-corto">Mié</span>
+					</th>
+					<th>
+						<span class="dia-largo">Jueves</span>
+						<span class="dia-corto">Jue</span>
+					</th>
+					<th>
+						<span class="dia-largo">Viernes</span>
+						<span class="dia-corto">Vie</span>
+					</th>
 				</tr>
 			</thead>
 			<tbody class="column-text-center" id="bloque-de-ramos">
 				<tr>
-					<th>8:10 - 9:40</th>
+					<th>08:10 - 09:40</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -61,7 +76,7 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>9:50 - 11:20</th>
+					<th>09:50 - 11:20</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -105,51 +120,63 @@
 		<div id="solo-impresion">
 			<p>Generado por Horario UACh</p>
 		</div>
-		<div class="field is-grouped center" id="interacciones">
-			<p class="control">
-				<a class="button" id="btnImprimir">
-					<span class="icon">
-						<i class="fas fa-print"></i>
-					</span>
-					<span>Imprimir</span>
-				</a>
-			</p>
-			<p class="control">
-				<a class="button" id="btnExcel">
-					<span class="icon">
-						<i class="fas fa-file-excel"></i>
-					</span>
-					<span>Excel</span>
-				</a>
-			</p>
-			<p class="control">
-				<a class="button" id="btnExportar" disabled>
-					<span class="icon">
-						<i class="fas fa-download"></i>
-					</span>
-					<span>Exportar</span>
-				</a>
-			</p>
-			<p class="control">
-				<a class="button" id="btnImportar" disabled>
-					<span class="icon">
-						<i class="fas fa-upload"></i>
-					</span>
-					<span>Importar</span>
-				</a>
-			</p>
-			<p class="control">
-				<a class="button is-dark" id="btnColorizar" disabled>
-					<span class="icon">
-						<i class="fas fa-paint-brush"></i>
-					</span>
-					<span>Cambiar Tema</span>
-				</a>
-			</p>
+		<div class="columns">
+			<div class="column">
+				<div class="field is-grouped center" id="interacciones">
+					<p class="control">
+						<a class="button" id="btnImprimir">
+							<span class="icon">
+								<i class="fas fa-print"></i>
+							</span>
+							<span>Imprimir</span>
+						</a>
+					</p>
+					<p class="control">
+						<a class="button" id="btnExcel">
+							<span class="icon">
+								<i class="fas fa-file-excel"></i>
+							</span>
+							<span>Excel</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="field is-grouped center" id="interacciones">
+					<p class="control">
+						<a class="button" id="btnExportar" disabled>
+							<span class="icon">
+								<i class="fas fa-download"></i>
+							</span>
+							<span>Exportar</span>
+						</a>
+					</p>
+					<p class="control">
+						<a class="button" id="btnImportar" disabled>
+							<span class="icon">
+								<i class="fas fa-upload"></i>
+							</span>
+							<span>Importar</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="column">
+				<div class="field is-grouped center" id="interacciones">
+					<p class="control">
+						<a class="button is-dark" id="btnColorizar" disabled>
+							<span class="icon">
+								<i class="fas fa-paint-brush"></i>
+							</span>
+							<span>Cambiar Tema</span>
+						</a>
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 
-	<div id="agregarAsignatura" class="quickview is-active">
+	<div id="agregarAsignatura" class="quickview">
 		<header class="quickview-header">
 			<p class="title">Agregar una asignatura</p>
 			<span class="delete" data-dismiss="quickview"></span>
@@ -167,7 +194,7 @@
 		</div>
 
 		<footer class="quickview-footer">
-			<p>versión 0.7.8 - creado por <a class="has-text-danger" href="http://juanlatorre.cl">Juan Latorre</a></p>
+			<p>versión 0.8.0 - creado por <a class="has-text-danger" href="http://juanlatorre.cl">Juan Latorre</a></p>
 		</footer>
 	</div>
 
@@ -204,15 +231,15 @@
 		function closest(el, selector) {
 			var matchesFn;
 
-		    ['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'].some(function(fn) {
-		    	if (typeof document.body[fn] == 'function') {
-		    		matchesFn = fn
-		    		return true
-		    	}
-		    	return false;
-		    });
+			['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'].some(function(fn) {
+				if (typeof document.body[fn] == 'function') {
+					matchesFn = fn
+					return true
+				}
+				return false;
+			});
 
-		    var parent;
+			var parent;
 
 		    // traverse parents
 		    while (el) {
@@ -251,6 +278,6 @@
 		        }
 		    });
 		});
-</script>
+	</script>
 </body>
 </html>
