@@ -1,0 +1,90 @@
+/*
+Autor: Juan Latorre
+Sitio web: http://juanlatorre.cl
+*/
+
+/*
+* Sapea tranquilo compadre :)
+*/
+
+@import url("fonts.css");
+
+h1 {
+	font-family: "Beaufort for LOL", serif;
+}
+
+#busqueda-de-ramos {
+	border-bottom: 1px solid #dbdbdb;
+}
+
+#lista-de-asignaturas {
+	padding: .3rem;
+}
+
+.column-text-center tr th {
+	text-align: center;
+}
+
+#main {
+	margin-top: 1rem;
+}
+
+.box {
+	margin-bottom: .5rem !important;
+}
+
+.checkbox {
+	margin-top: .5rem;
+}
+
+input[type=checkbox] {
+	transform: scale(1.3);
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+
+th {
+	vertical-align: middle !important;
+}
+
+/*td {
+	height: 3.5rem;
+}*/
+
+td {
+	height: 1px;
+}
+
+.field.is-grouped.center {
+    justify-content: center;
+}
+
+#solo-impresion {
+	display: none;
+}
+
+.bottom.tableexport-caption {
+	display: none !important;
+}
+
+@media print {
+	nav {
+		display: none;
+	}
+
+	#agregarAsignatura {
+		display: none;
+	}
+
+	#interacciones {
+		display: none;
+	}
+
+	#solo-impresion {
+		text-align: center;
+		display: block;
+	}
+}

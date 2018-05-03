@@ -1,0 +1,111 @@
+// un par de globales
+let GrupoClases = []
+let DBAsignaturas
+
+let agregarDatos = (id) => {
+	let [c,g] = id.split("-")
+	let encontrado = DBAsignaturas.find(o => o.codigo === c)
+	let gruposEncontrados = Object.keys(encontrado.grupos).find((e) => e === g)
+	encontrado.grupos[gruposEncontrados].forEach((clase) => {
+		document.getElementById("tabla-horario").rows[clase.periodo].cells[clase.dia].innerHTML += `
+			<div class="${id} has-background-success has-text-white">
+				<b>${c}</b>
+				<br>
+				<span>${clase.sala}</span>
+			</div>
+		`
+	})
+}
+
+let quitarDatos = (id) => {
+	$('.'+id).remove()
+}
+
+$(document).ready(() => {
+	$('input[type="text"]').keyup(function() {
+		var valor_de_busqueda = $(this).val().toLowerCase()
+		$('.nombre, .codigo').closest('.box').css('display', 'none')
+		$('.nombre, .codigo').each(function() {
+			var val = $(this).text().replace('Á','A').replace('É','E').replace('Í','I').replace('Ó','O').replace('Ú','U').replace('á','a').replace('é','e').replace('í','i').replace('ó','o').replace('ú','u')
+			if(val.toLowerCase().indexOf(valor_de_busqueda) >= 0) {
+				$(this).closest('.box').css('display', 'block')
+			}
+		})
+	})
+
+	$('input[type="checkbox"]').on("change", function() {
+		$(this).closest("input").toggleClass("checked", this.checked)
+		$(this).hasClass("checked") ? agregarDatos($(this).attr("id")) : quitarDatos($(this).attr("id"))
+	})
+
+	$('#btnImprimir').click( () => {
+		print()
+	})
+
+	$('#btnExcel').click( () => {
+		TableExport(document.getElementById("tabla-horario"), {
+			formats: ['xlsx'],
+			filename: 'id'
+		})
+		$('.button-default.xlsx').click()
+	})
+
+	$('#btnColorizar').click( () => {
+		$(".modal").addClass("is-active")
+	})
+
+	$('.modal-close').click( () => {
+		$(".modal").removeClass("is-active")
+	})
+})
+
+$.getJSON("asignaturas.json", (data) => {
+	DBAsignaturas = data
+	data.forEach((ramo) => {
+		for (var grupo in ramo.grupos) {
+			let grupito = grupo.split('_').join(' ')
+			let codigoMasGrupo = ramo.codigo + "-" + grupo
+			// Primero, recorremos cada grupo en ramo.grupos y copiamos el arreglo de su contenido en un arreglo temporal.
+			// EJ: ramo.grupos.Grupo_1 == arregloTemporal
+			//
+			// Ahora creamos el objetoTemporal y le agregamos el arregloTemporal, para posteriormente, meterlo en el arreglo GrupoClases.
+			//
+			// var objetoTemporal = {}
+			//
+			// {
+			//	 "codigomasgrupo": []
+			// }
+
+			var objetoTemporal = {
+				[codigoMasGrupo]: [
+				{
+					"dia": "3",
+					"periodo": "3",
+					"sala": "7101"
+				},
+				{
+					"dia": "4",
+					"periodo": "1",
+					"sala": "2208"
+				}
+				]
+			}
+			GrupoClases.push()
+			$("#lista-de-asignaturas").append(`
+				<div class="box">
+					<div class="columns">
+						<div class="column is-11">
+							<h2 class="nombre title is-5">${ramo.nombre}</h2>
+							<h3 class="codigo subtitle is-7">${ramo.codigo} - ${grupito}</h3>
+						</div>
+						<div class="column">
+							<label class="checkbox">
+								<input id="${codigoMasGrupo}" type="checkbox" class="regular-checkbox"/>
+							</label>
+						</div>
+					</div>
+				</div>
+				`)
+		}
+	})
+})
