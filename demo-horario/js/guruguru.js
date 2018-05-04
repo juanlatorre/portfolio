@@ -8,9 +8,8 @@ let agregarDatos = (id) => {
 	encontrado.grupos[gruposEncontrados].forEach((clase) => {
 		document.getElementById("tabla-horario").rows[clase.periodo].cells[clase.dia].innerHTML += `
 			<div class="${id} clase has-background-success has-text-white">
-				<b>${c}</b>
-				<br>
-				<span>${clase.sala}</span>
+				<p><b>${c}</b></p>
+				<p>${clase.sala}</p>
 			</div>
 		`
 	})

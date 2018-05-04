@@ -50,10 +50,6 @@ th {
 	vertical-align: middle !important;
 }
 
-/*td {
-	height: 3.5rem;
-}*/
-
 td {
 	height: 1px;
 }
@@ -78,6 +74,16 @@ td {
 	font-size: 1rem;
 }
 
+.clase:only-child {
+	height: 100%;
+}
+
+.clase:only-child p {
+	position: relative;
+	top: 30%;
+	transform: translateY(-50%);
+}
+
 .horario {
 	margin-top: 0px;
 	font-weight: normal;
@@ -95,12 +101,9 @@ td {
     .pc {
     	display: none !important;
     }
-
     .clase {
     	font-size: 0.7rem;
-    	height: 100%;
     }
-
 }
 
 @media print {
