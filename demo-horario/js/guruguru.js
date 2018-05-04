@@ -32,9 +32,14 @@ $(document).ready(() => {
 		})
 	})
 
-	$('input[type="checkbox"]').on("change", function() {
+	$('#cb-ramos').on("change", function() {
 		$(this).closest("input").toggleClass("checked", this.checked)
 		$(this).hasClass("checked") ? agregarDatos($(this).attr("id")) : quitarDatos($(this).attr("id"))
+	})
+
+	$('#horas-toggle').on("change", function() {
+		$(this).closest("input").toggleClass("checked", this.checked)
+		$(this).hasClass("checked") ? $("p.pc.ocultable").removeClass("oculto") : $("p.pc.ocultable").addClass("oculto")
 	})
 
 	$('#btnImprimir').click( () => {
@@ -74,7 +79,7 @@ $.getJSON("asignaturas.json", (data) => {
 						</div>
 						<div class="column">
 							<label class="checkbox">
-								<input id="${codigoMasGrupo}" type="checkbox" class="regular-checkbox"/>
+								<input id="${codigoMasGrupo} cb-ramo" type="checkbox" class="regular-checkbox"/>
 							</label>
 						</div>
 					</div>

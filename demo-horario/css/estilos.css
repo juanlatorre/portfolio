@@ -70,7 +70,7 @@ td {
 	display: none !important;
 }
 
-.dia-corto {
+.movil {
 	display: none;
 }
 
@@ -78,13 +78,22 @@ td {
 	font-size: 1rem;
 }
 
+.horario {
+	margin-top: 0px;
+	font-weight: normal;
+}
+
+.oculto {
+	display: none;
+}
+
 @media (max-width: 769px) {
-    .dia-corto {
-    	display: inline-block;
+    .movil {
+    	display: inline-block !important;
     }
 
-    .dia-largo {
-    	display: none;
+    .pc {
+    	display: none !important;
     }
 
     .clase {

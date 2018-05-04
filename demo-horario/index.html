@@ -43,32 +43,41 @@
 		<table id="tabla-horario" class="table is-bordered is-hoverable">
 			<thead class="column-text-center">
 				<tr>
-					<th></th>
-					<th>
-						<span class="dia-largo">Lunes</span>
-						<span class="dia-corto">Lun</span>
+					<th class="is-paddingless">
+						<label class="checkbox horario pc">
+							<input class="checked" type="checkbox" id="horas-toggle">
+							Mostrar horas
+						</label>
 					</th>
 					<th>
-						<span class="dia-largo">Martes</span>
-						<span class="dia-corto">Mar</span>
+						<span class="pc">Lunes</span>
+						<span class="movil">Lun</span>
 					</th>
 					<th>
-						<span class="dia-largo">Miércoles</span>
-						<span class="dia-corto">Mié</span>
+						<span class="pc">Martes</span>
+						<span class="movil">Mar</span>
 					</th>
 					<th>
-						<span class="dia-largo">Jueves</span>
-						<span class="dia-corto">Jue</span>
+						<span class="pc">Miércoles</span>
+						<span class="movil">Mié</span>
 					</th>
 					<th>
-						<span class="dia-largo">Viernes</span>
-						<span class="dia-corto">Vie</span>
+						<span class="pc">Jueves</span>
+						<span class="movil">Jue</span>
+					</th>
+					<th>
+						<span class="pc">Viernes</span>
+						<span class="movil">Vie</span>
 					</th>
 				</tr>
 			</thead>
 			<tbody class="column-text-center" id="bloque-de-ramos">
 				<tr>
-					<th>08:10 - 09:40</th>
+					<th>
+						<p class="movil">I</p>
+						<p class="pc">Bloque I</p>
+						<p class="pc oculto ocultable">08:10 - 09:40</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -76,7 +85,11 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>09:50 - 11:20</th>
+					<th>
+						<p class="movil">II</p>
+						<p class="pc">Bloque II</p>
+						<p class="pc oculto ocultable">09:50 - 11:20</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -84,7 +97,11 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>11:30 - 13:00</th>
+					<th>
+						<p class="movil">III</p>
+						<p class="pc">Bloque III</p>
+						<p class="pc oculto ocultable">11:30 - 13:00</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -92,7 +109,11 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>14:10 - 15:40</th>
+					<th>
+						<p class="movil">IV</p>
+						<p class="pc">Bloque IV</p>
+						<p class="pc oculto ocultable">14:10 - 15:40</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -100,7 +121,11 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>15:50 - 17:20</th>
+					<th>
+						<p class="movil">V</p>
+						<p class="pc">Bloque V</p>
+						<p class="pc oculto ocultable">15:50 - 17:20</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -108,7 +133,11 @@
 					<td class="has-text-centered is-paddingless vacio"></td>
 				</tr>
 				<tr>
-					<th>17:30 - 19:00</th>
+					<th>
+						<p class="movil">VI</p>
+						<p class="pc">Bloque VI</p>
+						<p class="pc oculto ocultable">17:30 - 19:00</p>
+					</th>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
 					<td class="has-text-centered is-paddingless vacio"></td>
@@ -194,7 +223,7 @@
 		</div>
 
 		<footer class="quickview-footer">
-			<p>versión 0.8.0 - creado por <a class="has-text-danger" href="http://juanlatorre.cl">Juan Latorre</a></p>
+			<p>versión 0.8.2 - creado por <a class="has-text-danger" href="http://juanlatorre.cl">Juan Latorre</a></p>
 		</footer>
 	</div>
 
