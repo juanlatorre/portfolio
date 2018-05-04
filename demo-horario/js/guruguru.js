@@ -32,7 +32,7 @@ $(document).ready(() => {
 		})
 	})
 
-	$('#cb-ramos').on("change", function() {
+	$('.cb-ramo').on("change", function() {
 		$(this).closest("input").toggleClass("checked", this.checked)
 		$(this).hasClass("checked") ? agregarDatos($(this).attr("id")) : quitarDatos($(this).attr("id"))
 	})
@@ -79,7 +79,7 @@ $.getJSON("asignaturas.json", (data) => {
 						</div>
 						<div class="column">
 							<label class="checkbox">
-								<input id="${codigoMasGrupo} cb-ramo" type="checkbox" class="regular-checkbox"/>
+								<input id="${codigoMasGrupo}" type="checkbox" class="regular-checkbox cb-ramo"/>
 							</label>
 						</div>
 					</div>
