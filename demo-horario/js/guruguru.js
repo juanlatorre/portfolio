@@ -1,16 +1,31 @@
 // un par de globales
 let DBAsignaturas
 
+function update(picker) {
+    document.getElementById('hex-str').innerHTML = picker.toHEXString();
+    document.getElementById('rgb-str').innerHTML = picker.toRGBString();
+
+    document.getElementById('rgb').innerHTML =
+        Math.round(picker.rgb[0]) + ', ' +
+        Math.round(picker.rgb[1]) + ', ' +
+        Math.round(picker.rgb[2]);
+
+    document.getElementById('hsv').innerHTML =
+        Math.round(picker.hsv[0]) + '&deg;, ' +
+        Math.round(picker.hsv[1]) + '%, ' +
+        Math.round(picker.hsv[2]) + '%';
+}
+
 let agregarDatos = (id) => {
 	let [c,g] = id.split("-")
 	let encontrado = DBAsignaturas.find(o => o.codigo === c)
 	let gruposEncontrados = Object.keys(encontrado.grupos).find((e) => e === g)
 	encontrado.grupos[gruposEncontrados].forEach((clase) => {
 		document.getElementById("tabla-horario").rows[clase.periodo].cells[clase.dia].innerHTML += `
-			<div class="${id} clase has-background-success has-text-white">
-				<p><b>${c}</b></p>
-				<p>${clase.sala}</p>
-			</div>
+		<div class="${id} notification clase">
+		<p><b>${c}</b></p>
+		<p>${clase.sala}</p>
+		</div>
 		`
 	})
 }
@@ -19,7 +34,21 @@ let quitarDatos = (id) => {
 	$('.'+id).remove()
 }
 
+let paletaAlemana = ["#FFC312", "#C4E538", "#12CBC4", "#FDA7DF", "#ED4C67", "#EE5A24", "#009432", "#0652DD", "#9980FA", "#833471", "#F79F1F", "#A3CB38", "#1289A7", "#D980FA", "#B53471", "#EA2027", "#006266", "#1B1464", "#5758BB", "#6F1E51"]
+
+$(document).click((event) => {
+	if ($(event.target).closest(".modal-background").length) {
+		$("body").find(".modal").removeClass("is-active");
+	}
+})
+
+// $('#btnCambiarColor').click( () => {
+// 	$(".modal").addClass("is-active")
+// })
+
 $(document).ready(() => {
+	$('.pageloader').toggleClass("is-active")
+
 	$('input[type="text"]').keyup(function() {
 		var valor_de_busqueda = $(this).val().toLowerCase()
 		$('.nombre, .codigo').closest('.box').css('display', 'none')
@@ -36,9 +65,9 @@ $(document).ready(() => {
 		$(this).hasClass("checked") ? agregarDatos($(this).attr("id")) : quitarDatos($(this).attr("id"))
 	})
 
-	$('#horas-toggle').on("change", function() {
+	$('#mostrarHoras').on("change", function() {
 		$(this).closest("input").toggleClass("checked", this.checked)
-		$(this).hasClass("checked") ? $("p.pc.ocultable").removeClass("oculto") : $("p.pc.ocultable").addClass("oculto")
+		$(this).prop("checked") ? $("p.pc.ocultable").removeClass("is-invisible") : $("p.pc.ocultable").addClass("is-invisible")
 	})
 
 	$('#btnImprimir').click( () => {
@@ -57,8 +86,12 @@ $(document).ready(() => {
 		$(".modal").addClass("is-active")
 	})
 
-	$('.modal-close').click( () => {
+	$('button.delete').click( () => {
 		$(".modal").removeClass("is-active")
+	})
+
+	$('#btnAjustes').click( () => {
+		$("#parentAjustes").toggleClass("is-active")
 	})
 })
 
@@ -71,17 +104,14 @@ $.getJSON("asignaturas.json", (data) => {
 
 			$("#lista-de-asignaturas").append(`
 				<div class="box">
-					<div class="columns">
-						<div class="column is-11">
-							<h2 class="nombre title is-5">${ramo.nombre}</h2>
-							<h3 class="codigo subtitle is-7">${ramo.codigo} - ${grupito}</h3>
-						</div>
-						<div class="column">
-							<label class="checkbox">
-								<input id="${codigoMasGrupo}" type="checkbox" class="regular-checkbox cb-ramo"/>
-							</label>
-						</div>
-					</div>
+				<span class="nombre title is-5">${ramo.nombre}</span>
+				<br>
+				<span class="codigo subtitle is-7">${ramo.codigo} - ${grupito}</span>
+				<div class="contenedor-checkbox">
+				<label class="checkbox is-pulled-right">
+				<input id="${codigoMasGrupo}" type="checkbox" class="regular-checkbox cb-ramo"/>
+				</label>
+				</div>
 				</div>
 				`)
 		}
