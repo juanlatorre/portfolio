@@ -730,5 +730,535 @@
         }
       ]
     }
+  },
+  {
+    "codigo": "INFO063",
+    "nombre": "Introducción a la Programación",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "3",
+          "sala": "Lab. Curiñanco"
+        },
+        {
+          "dia": "2",
+          "periodo": "3",
+          "sala": "6304"
+        },
+        {
+          "dia": "4",
+          "periodo": "4",
+          "sala": "Lab. Curiñanco"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO081",
+    "nombre": "Programación",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "5",
+          "sala": "Lab. Curiñanco"
+        },
+        {
+          "dia": "3",
+          "periodo": "1",
+          "sala": "Lab. Curiñanco"
+        }
+      ],
+      "Grupo_2": [
+        {
+          "dia": "1",
+          "periodo": "1",
+          "sala": "Lab. Curiñanco"
+        },
+        {
+          "dia": "2",
+          "periodo": "4",
+          "sala": "Lab. Curiñanco"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO083",
+    "nombre": "Taller de Ingeniería: Programación Aplicada",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "4",
+          "periodo": "2",
+          "sala": "Lab. Llancahue"
+        },
+        {
+          "dia": "4",
+          "periodo": "3",
+          "sala": "Lab. Llancahue"
+        }
+      ],
+      "Grupo_2": [
+        {
+          "dia": "5",
+          "periodo": "1",
+          "sala": "Lab. Llancahue"
+        },
+        {
+          "dia": "5",
+          "periodo": "2",
+          "sala": "Lab. Llancahue"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO085",
+    "nombre": "Estructura de Datos y Algoritmos",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "2",
+          "sala": "6309"
+        },
+        {
+          "dia": "2",
+          "periodo": "4",
+          "sala": "6310"
+        },
+        {
+          "dia": "3",
+          "periodo": "2",
+          "sala": "6309"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO090",
+    "nombre": "Programación Orientada a Objeto",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "3",
+          "sala": "Lab. Curiñanco"
+        },
+        {
+          "dia": "4",
+          "periodo": "3",
+          "sala": "Lab. Curiñanco"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO099",
+    "nombre": "Estructuras Discretas",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "4",
+          "sala": "6310"
+        },
+        {
+          "dia": "2",
+          "periodo": "5",
+          "sala": "6301"
+        },
+        {
+          "dia": "4",
+          "periodo": "2",
+          "sala": "6301"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO104",
+    "nombre": "Taller de Construcción de Software",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "3",
+          "periodo": "6",
+          "sala": "9201"
+        },
+        {
+          "dia": "5",
+          "periodo": "4",
+          "sala": "9201"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO163",
+    "nombre": "Programación Concurrente",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "4",
+          "sala": "Lab. Mancera"
+        },
+        {
+          "dia": "3",
+          "periodo": "1",
+          "sala": "Lab. Mancera"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO165",
+    "nombre": "Compiladores",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "3",
+          "sala": "6310"
+        },
+        {
+          "dia": "4",
+          "periodo": "2",
+          "sala": "6310"
+        },
+        {
+          "dia": "5",
+          "periodo": "2",
+          "sala": "6309"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO173",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "INFO",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
   }
 ]
