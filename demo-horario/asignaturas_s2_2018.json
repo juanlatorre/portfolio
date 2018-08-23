@@ -1,0 +1,734 @@
+[
+  {
+    "codigo": "BAIN012",
+    "nombre": "Geometría para Ingeniería",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "2",
+          "sala": "6306"
+        },
+        {
+          "dia": "3",
+          "periodo": "2",
+          "sala": "6306"
+        },
+        {
+          "dia": "5",
+          "periodo": "2",
+          "sala": "6306"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN017",
+    "nombre": "Álgebra para Ingenieria",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "3",
+          "sala": "9201"
+        },
+        {
+          "dia": "3",
+          "periodo": "1",
+          "sala": "9201"
+        },
+        {
+          "dia": "4",
+          "periodo": "2",
+          "sala": "9201"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN019",
+    "nombre": "Química para Ingenieria",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "4",
+          "sala": "9102"
+        },
+        {
+          "dia": "3",
+          "periodo": "4",
+          "sala": "6301"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN032",
+    "nombre": "Química General",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "2",
+          "sala": "6303"
+        },
+        {
+          "dia": "4",
+          "periodo": "1",
+          "sala": "6303"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN034",
+    "nombre": "Geometría",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "5",
+          "periodo": "4",
+          "sala": "6301"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN036",
+    "nombre": "Álgebra Lineal para Ingeniería",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "3",
+          "sala": "9103"
+        },
+        {
+          "dia": "4",
+          "periodo": "1",
+          "sala": "6306"
+        },
+        {
+          "dia": "5",
+          "periodo": "1",
+          "sala": "6301"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN037",
+    "nombre": "Cálculo I para Ingeniería",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "1",
+          "sala": "6302"
+        },
+        {
+          "dia": "3",
+          "periodo": "3",
+          "sala": "6302"
+        },
+        {
+          "dia": "5",
+          "periodo": "3",
+          "sala": "6303"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN038",
+    "nombre": "Física I para Ingeniería",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "1",
+          "periodo": "4",
+          "sala": "6302"
+        },
+        {
+          "dia": "3",
+          "periodo": "2",
+          "sala": "8103"
+        },
+        {
+          "dia": "4",
+          "periodo": "2",
+          "sala": "Laboratorio B"
+        },
+        {
+          "dia": "5",
+          "periodo": "2",
+          "sala": "8103"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN039",
+    "nombre": "Comunicación en Idioma Inglés",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "2",
+          "periodo": "3",
+          "sala": "7101"
+        },
+        {
+          "dia": "4",
+          "periodo": "3",
+          "sala": "7102"
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN041",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN042",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN043",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN052",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN053",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN054",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN065",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN067",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN068",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN069",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN072",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN073",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN074",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN075",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN076",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN077",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN078",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN079",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN081",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN082",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN083",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN085",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN086",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN087",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN088",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN089",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN091",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN092",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN095",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  },
+  {
+    "codigo": "BAIN100",
+    "nombre": "",
+    "grupos": {
+      "Grupo_1": [
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        },
+        {
+          "dia": "",
+          "periodo": "",
+          "sala": ""
+        }
+      ]
+    }
+  }
+]
