@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="#ff3860">
 	<title>Horario UACh</title>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
 	<link rel="stylesheet" type="text/css" href="css/bulma-quickview.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bulma-switch.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bulma-pageloader.min.css">
 </head>
 <div class="pageloader is-active is-danger"><span class="title">Cargando...</span></div>
+
 <body>
 	<nav class="navbar is-light" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
@@ -260,7 +263,7 @@
 				<i class="fas fa-search"></i>
 			</span>
 		</p>
-		<span class="is-size-7 text-center has-text-grey">Última actualización: 1er Semestre 2018</span>
+		<span class="is-size-7 text-center has-text-grey">Última actualización: 2do Semestre 2018</span>
 		<div class="quickview-body">
 			<div class="quickview-block">
 				<div id="lista-de-asignaturas"></div>
@@ -298,11 +301,11 @@
 	<script src="js/tableexport.min.js"></script>
 	<script src="js/jscolor.js"></script>
 	<script>
-		document.addEventListener('DOMContentLoaded', function() {
+		document.addEventListener('DOMContentLoaded', function () {
 			var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
 			if ($navbarBurgers.length > 0) {
-				$navbarBurgers.forEach(function($el) {
-					$el.addEventListener('click', function() {
+				$navbarBurgers.forEach(function ($el) {
+					$el.addEventListener('click', function () {
 						var target = $el.dataset.target
 						var $target = document.getElementById(target)
 						$el.classList.toggle('is-active')
@@ -315,7 +318,7 @@
 		function closest(el, selector) {
 			var matchesFn;
 
-			['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'].some(function(fn) {
+			['matches', 'webkitMatchesSelector', 'mozMatchesSelector', 'msMatchesSelector', 'oMatchesSelector'].some(function (fn) {
 				if (typeof document.body[fn] == 'function') {
 					matchesFn = fn
 					return true
@@ -325,43 +328,44 @@
 
 			var parent;
 
-		    // traverse parents
-		    while (el) {
-		    	parent = el.parentElement;
-		    	if (parent && parent[matchesFn](selector)) {
-		    		return parent;
-		    	}
-		    	el = parent;
-		    }
+			// traverse parents
+			while (el) {
+				parent = el.parentElement;
+				if (parent && parent[matchesFn](selector)) {
+					return parent;
+				}
+				el = parent;
+			}
 
-		    return null;
+			return null;
 		}
 
-		document.addEventListener('DOMContentLoaded', function() {
-		    // Get all document sliders
-		    var showQuickview = document.querySelectorAll('[data-show="quickview"]');
-		    [].forEach.call(showQuickview, function(show) {
-		    	var quickview = document.getElementById(show.dataset['target']);
-		    	if (quickview) {
-		            // Add event listener to update output when slider value change
-		            show.addEventListener('click', function(event) {
-		            	quickview.classList.add('is-active');
-		            });
-		        }
-		    });
+		document.addEventListener('DOMContentLoaded', function () {
+			// Get all document sliders
+			var showQuickview = document.querySelectorAll('[data-show="quickview"]');
+			[].forEach.call(showQuickview, function (show) {
+				var quickview = document.getElementById(show.dataset['target']);
+				if (quickview) {
+					// Add event listener to update output when slider value change
+					show.addEventListener('click', function (event) {
+						quickview.classList.add('is-active');
+					});
+				}
+			});
 
-		    // Get all document sliders
-		    var dismissQuickView = document.querySelectorAll('[data-dismiss="quickview"]');
-		    [].forEach.call(dismissQuickView, function(dismiss) {
-		    	var quickview = closest(dismiss, '.quickview');
-		    	if (quickview) {
-		            // Add event listener to update output when slider value change
-		            dismiss.addEventListener('click', function(event) {
-		            	quickview.classList.remove('is-active');
-		            });
-		        }
-		    });
+			// Get all document sliders
+			var dismissQuickView = document.querySelectorAll('[data-dismiss="quickview"]');
+			[].forEach.call(dismissQuickView, function (dismiss) {
+				var quickview = closest(dismiss, '.quickview');
+				if (quickview) {
+					// Add event listener to update output when slider value change
+					dismiss.addEventListener('click', function (event) {
+						quickview.classList.remove('is-active');
+					});
+				}
+			});
 		});
 	</script>
 </body>
+
 </html>
