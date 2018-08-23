@@ -150,7 +150,7 @@ $(document).ready(() => {
   });
 });
 
-$.getJSON("asignaturas_s1_2018.json", data => {
+$.getJSON("asignaturas_s2_2018.json", data => {
   DBAsignaturas = data;
   data.forEach(ramo => {
     for (var grupo in ramo.grupos) {
