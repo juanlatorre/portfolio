@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Epic Seven Promotion Calculator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script defer src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+	<script defer src="main.js"></script>
+</head>
+<body>
+	<section class="section">
+	    <div class="container">
+			<h1 class="title" style="padding-bottom: 2em">
+	        	Epic Seven — <i>Promotion Calculator</i>
+	      	</h1>
+			
+			<div class="columns">
+				<div class="column fod-need">
+					<p>I want to promote a <input name="want_to_promote" class="input" type="number" value="5" placeholder="5" style="width: 70px; vertical-align: middle;" min="2" max="5" disabled> ☆ unit</p>
+					<p>I have <input name="held_s5" class="input" value="0" type="number" style="width: 70px; vertical-align: middle;" step="1" min="0"> 5 ☆ units</p>
+					<p>I have <input name="held_s4" class="input" value="0" type="number" style="width: 70px; vertical-align: middle;" step="1" min="0"> 4 ☆ units</p>
+					<p>I have <input name="held_s3" class="input" value="0" type="number" style="width: 70px; vertical-align: middle;" step="1" min="0"> 3 ☆ units</p>
+					<p>I have <input name="held_s2" class="input" value="0" type="number" style="width: 70px; vertical-align: middle;" step="1" min="0"> 2 ☆ units</p>
+				</div>
+				<div class="column fod-need">
+					<p>Your total worth in 2 ☆ units: <input name="total_worth" value="0" class="input" type="number" style="width: 60px; vertical-align: middle;" min="2" max="5" readonly></p>
+					<p>You need <input name="need_s5" class="input" type="number" style="width: 70px; vertical-align: middle;" readonly> 5 ☆ units</p>
+					<p>You need <input name="need_s4" class="input" type="number" style="width: 70px; vertical-align: middle;" readonly> 4 ☆ units</p>
+					<p>You need <input name="need_s3" class="input" type="number" style="width: 70px; vertical-align: middle;" readonly> 3 ☆ units</p>
+					<p>You need <input name="need_s2" class="input" type="number" style="width: 70px; vertical-align: middle;" readonly> 2 ☆ units</p>
+				</div>				
+			</div>
+	    </div>
+	</section>
+</body>
+</html>
