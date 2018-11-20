@@ -1,0 +1,4 @@
+[submodule "promotion-calc"]
+	path = promotion-calc
+	url = https://github.com/juanlatorre/promotion-calc.git
+	branch = master
