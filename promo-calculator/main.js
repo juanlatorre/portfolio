@@ -5,9 +5,9 @@ const worth = {
 	s2: 1
 }
 
-$(function() {
-	
+$(function() {	
 	function refresh() {
+		
 		var held = {
 			s5: $("input[name='held_s5']").val(),
 			s4: $("input[name='held_s4']").val(),
@@ -23,7 +23,7 @@ $(function() {
 		}
 
 		// Define total worth
-		var total_worth = (worth.s5 * held.s5) + (worth.s4 * held.s4) + (worth.s3 * held.s3) + (worth.s2 * held.s2) 
+		var total_worth = (1*360)-(held.s5*60+held.s4*12+held.s3*3+held.s2*1)-(1*60)
 		$("input[name='total_worth']").val(total_worth)
 		
 		need.s2.val(360-total_worth)
