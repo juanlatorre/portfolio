@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Juan Latorre]]></title><description><![CDATA[Sitio web personal de Juan Latorre, hecho con Gatsby y Bulma.]]></description><link>http://github.com/dylang/node-rss</link><generator>RSS for Node</generator><lastBuildDate>Thu, 14 Mar 2019 01:22:17 GMT</lastBuildDate><item><title><![CDATA[Formulario de Contacto para Sitio Estático 2]]></title><description><![CDATA[Justo después de terminar el  post anterior  y configurar todo el sistema de envío de mensajes, me encontré con una alternativa bastante…]]></description><link>https://juanlatorre.cl/blog/formulario-de-contacto-para-sitio-estatico-2/</link><guid isPermaLink="false">https://juanlatorre.cl/blog/formulario-de-contacto-para-sitio-estatico-2/</guid><pubDate>Fri, 08 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Justo después de terminar el &lt;a href=&quot;https://juanlatorre.cl/blog/formulario-de-contacto-para-sitio-estatico&quot;&gt;post anterior&lt;/a&gt; y configurar todo el sistema de envío de mensajes, me encontré con una alternativa bastante buena, así que decidí configurarla en el sitio para probarla.&lt;/p&gt;
+&lt;p&gt;Se trata de &lt;a href=&quot;https://getsimpleform.com/&quot;&gt;Simple Form&lt;/a&gt;, una alternativa al ya mencionado FormSpree que no cuenta con las limitaciones de éste.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 610px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 61.14754098360656%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAACFklEQVQoz31STW8SYRDmX5l4MNqL0aIFChQKLJQCLrtsFxbKly2UlrRpTWM89GLiX/BgY4yJBxO1VSBA0178NY/zvMsiXHp4duadmZ155sP3MlXC6mYR/oQh0lDyRdKcvWl3dQ+rM78X40r3zVw+GtOlNuKvatjU6yJ3EUhbiOYcaGYLwYyNiOjhbAXh7Qo28lUE0ztY0yz1DogMSQzBpL7Qlo167xx7J+/Qe3MBs9GH/foEO+1jtPtv0Tg8h9M5hbN/Kr4jtMRW3O1JzDEOzi5gS1yte6ZIPZeOfGtaSVWLFWqIbDtY3yorlqxIVmRKf0BY0cY42hlDX1zelN4YfKSvS0UyKQszBj6L62oe3nw8fXluxtJ85zNk9VylA73WQ8HpKobekhYX4b8X/4uqhMliQy2ESAiSRlMthJJv6kRC4jirlNkU2VL/UWdXc4bcKJkZ9UNkrDbyomftPbXBqGyUc43mqmpOEdpEp29x69SXWlYVJRnZpIzmfClcRHABvAiOZD0ryMiiUqbAQFAzla5a5ic0uzXvvtRtyc/qzqSDsCQgWICMNvIOYlYXIaODRKWPePkIT7WqmzAmbL7/GuBqMMH1cIrr0Y1giiulT2c2VyrbYIwfozt83E/hUn+AT9YTfLUf4X1+Bf6ktMz2fv4ZYzC+xXByh+H0Hoh/NLnF75u/uOxq+GI+xGd7Bd8qj/Gh4Cb8BwK6K6YCW7feAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;simpleform&quot;
+        title=&quot;&quot;
+        src=&quot;/static/6a56f247d250fe26ae41cea80fa6d05c/7aab9/formulario-de-contacto-para-sitio-estatico2-1.png&quot;
+        srcset=&quot;/static/6a56f247d250fe26ae41cea80fa6d05c/8023c/formulario-de-contacto-para-sitio-estatico2-1.png 163w,
+/static/6a56f247d250fe26ae41cea80fa6d05c/e6d47/formulario-de-contacto-para-sitio-estatico2-1.png 325w,
+/static/6a56f247d250fe26ae41cea80fa6d05c/7aab9/formulario-de-contacto-para-sitio-estatico2-1.png 610w&quot;
+        sizes=&quot;(max-width: 610px) 100vw, 610px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;La forma en la que funciona es super simple, ingresas tu correo y te darán un &lt;strong&gt;token&lt;/strong&gt; con ese token puedes revisar los correos y configurar el envío de mensajes a través de &lt;em&gt;POST&lt;/em&gt; en el formulario, con la &lt;em&gt;URI&lt;/em&gt; correspondiente.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://getsimpleform.com/messages?form_api_token=&amp;lt;form_api_token&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;post&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Luego todo será casi igual al post anterior, configuramos los atributos &lt;strong&gt;name&lt;/strong&gt; de cada &lt;code class=&quot;language-text&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt;o &lt;code class=&quot;language-text&quot;&gt;&amp;lt;textarea&amp;gt;&lt;/code&gt; del formulario, y agregamos un input escondido, que servirá para redirigir a una &lt;em&gt;URI&lt;/em&gt; después de enviar el mensaje, algo super útil.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;hidden&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;redirect_to&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&amp;lt;the complete return url e.g. http://fooey.com/thank-you.html&gt;&lt;span class=&quot;token punctuation&quot;&gt;&apos;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Después hay dos opciones.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Visitar el sitio &lt;a href=&quot;https://getsimpleform.com/messages?api_token=%3Capi_token%3E&quot;&gt;https://getsimpleform.com/messages?api&lt;em&gt;token=&amp;#x3C;api&lt;/em&gt;token&gt;&lt;/a&gt; para revisar los mensajes que te han enviado.&lt;/li&gt;
+&lt;li&gt;Ver tu correo; además de estar en el sitio, los mensajes son automaticamente enviados al correo con el que pediste el &lt;strong&gt;token&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;En cuanto a la seguridad, no es posible para una persona &lt;strong&gt;x&lt;/strong&gt; utilizar tu &lt;strong&gt;token&lt;/strong&gt; y revisar los mensajes como si nada, ya que Simple Form utiliza un sistema simple de 2 &lt;strong&gt;token&lt;/strong&gt;, como explican en su &lt;em&gt;FAQ&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Simpleform uses two api tokens, one called the &apos;form&lt;em&gt;api&lt;/em&gt;token&apos; which is a public token and the other called the &apos;api_token&apos; which is a private token and is visible only to you, you need this private token to view all the messages. A user cannot use the public token to view your messages.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Extras&lt;/h2&gt;
+&lt;p&gt;Otra funcionalidad espectacular de Simple Form, es la posibilidad de ver los mensajes en &lt;strong&gt;JSON&lt;/strong&gt;, para hacerlo puedes visitar la siguiente &lt;em&gt;URI&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://getsimpleform.com/messages.json?api_token=%3Capi_token%3E&quot;&gt;https://getsimpleform.com/messages.json?api&lt;em&gt;token=&amp;#x3C;api&lt;/em&gt;token&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Lo otro genial, es que puedes personalizar algunos ajustes. Dentro del correo que te enviaron cuando pediste un &lt;strong&gt;token&lt;/strong&gt;, se encuentra una &lt;em&gt;URI&lt;/em&gt; al panel de ajustes, en este panel podemos poner un &lt;strong&gt;token&lt;/strong&gt; de akismet y agregamos &lt;em&gt;anti-spam__ al formulario, podemos cambiar el _reply to&lt;/em&gt;, el asunto y hasta el cuerpo del mensaje; hasta soporta cierto nivel de &lt;em&gt;templating&lt;/em&gt; para obtener los datos como nombre, teléfono y correo del que envía el mensaje.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 59.74710221285563%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAB2UlEQVQoz5WSW0ubQRCG92foRVEKaj1FSJXWU9RojFRz0OIJ0lRsMXihFKFeiNFSQY0n1MRYTOMBo9EaYmmrhVL6A/RCQaUX/pQvydvZUT5M/aK48DALM/Puuzsryi2vUGF1MpW2LuhNbSioakZhTQsKq7XJM9hVcittSQid8SV01Jxd1oSccgse6U1I09UgvciIdJ02WVQrm6VgPh2ez9HOUXyY8WNlcw8LgRC8wTCW1nbgX9/VYIdZpn1DZy9KGjohzWSTiScVVhUxODaH+ZVNeHxBTPvXr1lLwVWuvt2FKnsXDMTzRgdT2uRAibkDYmLxM0KRHwiEIlgN7zPBVGxHsfHlG6yv+/m9a+1O1NkcMBLmDhfPQbxzezDpDcLt8WF40stxZGrpFu4pH+dGp/0wtfWglFwV17dDX9dKg2zFU9oX0MDE7KcNRA9+Yyt6gG0ivH+IyPdfmuwRX3/+gcXZh8fPXvBgbr4fT1k6HF8IYGhikR3eh3RY3dLNv0JO+OYXkoizv5d46HK9/4iMYjNdsVn9Pqrg0ckZFymKglgsjlg8BZRTlBjXvhkYRea1YJ7BloQ4Pr3gojg13bUSiYRa85YEM1TB/658fHrORdKBbLoLbcFkh/8AAyVpGfIyRd8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ajustes&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e85343c02d158463346d4b866425f806/ccaa4/formulario-de-contacto-para-sitio-estatico2-2.png&quot;
+        srcset=&quot;/static/e85343c02d158463346d4b866425f806/4d3a0/formulario-de-contacto-para-sitio-estatico2-2.png 163w,
+/static/e85343c02d158463346d4b866425f806/c6041/formulario-de-contacto-para-sitio-estatico2-2.png 325w,
+/static/e85343c02d158463346d4b866425f806/ccaa4/formulario-de-contacto-para-sitio-estatico2-2.png 650w,
+/static/e85343c02d158463346d4b866425f806/4cc34/formulario-de-contacto-para-sitio-estatico2-2.png 949w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;En definitiva, mucho menos engorroso que el primer post, pero también menos divertido.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Formulario de Contacto para Sitio Estático]]></title><description><![CDATA[Dado que este blog es un  sitio estático , tuve que buscar alternativas para poder enviar un formulario de contacto sin la necesidad de…]]></description><link>https://juanlatorre.cl/blog/formulario-de-contacto-para-sitio-estatico/</link><guid isPermaLink="false">https://juanlatorre.cl/blog/formulario-de-contacto-para-sitio-estatico/</guid><pubDate>Thu, 07 Mar 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Dado que este blog es un &lt;em&gt;&lt;em&gt;sitio estático&lt;/em&gt;&lt;/em&gt;, tuve que buscar alternativas para poder enviar un formulario de contacto sin la necesidad de tener backend o un servidor dedicado para eso.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 89.08819133034379%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsSAAALEgHS3X78AAAC2ElEQVQ4y31UCW7cMAz0//9XNCiSXd+yLV+S70OeDrXJNgnaGuAOSWkpckQqcO7COE4YhhHTNFEfMVDWdcV1XXDOwXm8nvj0e3nY8+pwUg+uy2EaDKzpGXSAtRZd12OeZ3x88oe/4Wd92cEDgeDgb9IB60lZFgZa/AbJ9jydP2Tfd29v2+YPOs/THywiuvisMVj4/2BipFDPaOxKx4yZsm6rX9z2zdv7sYNFQqqRAFKq4Gf9OA6PgTimfsTYk8eO/BFNa4kDRiO29b59ObHz8M/lfi9fvkBILVWHPG5Q5C0abVHFI6pkhs5mlMS+XGDKGVO3MQL++Unw4HQn7vkdYR7ilt0QqRBJqhAnFeK4wO2m0LQNjO3Qdg2apvF0GHLW973nUXyC7xk66Mqg1oNHXckGi7ruUFWdR7GzrIZSjefqI5vv4gMKrgv7aHIel9kxg+vdJ/ZXXUrm3fj++xuXwcHW+HWvcU9bYoUwa3GLW0Tk8zVqcE9avLzWiMmz+F7eKryFBm9vI7TeeLhjO11fOVR1gVwrpFWGuEiQlpnXkyJloARZ+dBz7st0jqZrkTO44iEpE9HaPAchkKjGGjawZfMO6I2Q35LwxyUYTlClS05P+z6Gp5fj3DhqO/WD+u6b/hGQXAx69dKrGWO9Yu52LD2no90xC9Y711mePTA2K2y1eP/MNhL73Nznkh0SpSgFoiyHKjVUxZZROcI09Wsx/amsq4x7Mt56jzzhzccWaWSRZ48RfLZNSW4KTR7JlSpzxGnMIDEylSJKQq8neYKqLmGGHtM8kgpLGfgyTb615HV6cigjdewOB1M/9wsb7fO4vC548BZl/XokQd9/JkX6KUoNM7AIk55l8uaoq2rALWqZXc82aZ92qnrco55ZrXyFHG/3oPyZ8UBellt2x4/Xn7hx/FRXorYNyq5C3hZQbYmCPm1qr4uY0ZDHie0yoSxGlKU8yJt/5n4DBQVpwDPnn7oAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;búsqueda de google&quot;
+        title=&quot;&quot;
+        src=&quot;/static/84f76a865bdbe4e2018a0b0146bd75a7/ccaa4/formulario-de-contacto-para-sitio-estatico-1.png&quot;
+        srcset=&quot;/static/84f76a865bdbe4e2018a0b0146bd75a7/4d3a0/formulario-de-contacto-para-sitio-estatico-1.png 163w,
+/static/84f76a865bdbe4e2018a0b0146bd75a7/c6041/formulario-de-contacto-para-sitio-estatico-1.png 325w,
+/static/84f76a865bdbe4e2018a0b0146bd75a7/ccaa4/formulario-de-contacto-para-sitio-estatico-1.png 650w,
+/static/84f76a865bdbe4e2018a0b0146bd75a7/39468/formulario-de-contacto-para-sitio-estatico-1.png 669w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Obviamente al hacer la búsqueda en Google me encuentro con que la opción más usada y famosa es &lt;a href=&quot;https://formspree.io&quot;&gt;Formspree&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4&gt;¿Qué es Formspree?&lt;/h4&gt;
+&lt;p&gt;Connect your form to our endpoint and we’ll email you the submissions. No PHP, Javascript or sign up required —  &lt;em&gt;perfect for static sites!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;form&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;https://formspree.io/your@email.com&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;POST&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;  
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;email&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;_replyto&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;input&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;submit&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;Send&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; 
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;form&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Así de sencillo, ya tendría funcionando un formulario de contacto en mi sitio estático, todo bien... pero no.&lt;/p&gt;
+&lt;p&gt;Resulta que al enviar el formulario con Formspree, nos encontramos con esta maravilla.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 58.279009126466754%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAABR0lEQVQoz5WT23KCMBCGff+X8Ul6YdUqHe0FYOUQQhJyAMaZv5s4YFGr9uInu+zmy2l31rYOXdfCj/fkY69oyJ35j7Uaxgh0rUbrmiBvO6fQNIJUX0kEaX2OGaNGaAA6p3HMUrwtF1hFH3jfrIMdfX1CSkaTKih1kf93URnAN8DvLMFys8Jqu0a0i4Id7baoqgyMHYO87eVBv+FayynQmAaiLlCxDDUvSHlQRZCiOKDID8jzdNQtUFwDFQU5jLWQSlKSJF9RQofTqcciKpGVAtb4++Mj6CFQSk4BDc457YyF0TkX4HGcoCyLCejJkVW43PMDcDT6vBPvC8HuPMTTRzFhlSBFsJqNpWGMfCg/x5fdCBwK0vjj0v3x/R7JfI74kCJNYlrMUrz7X2EHZ+gYa+AI3PcDxP3ZRdcdNdnhpNUIdi/5lRb8AQcLmB3ezbkqAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;captcha&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9ea69958321cc0788fef9404c80d77eb/ccaa4/formulario-de-contacto-para-sitio-estatico-2.png&quot;
+        srcset=&quot;/static/9ea69958321cc0788fef9404c80d77eb/4d3a0/formulario-de-contacto-para-sitio-estatico-2.png 163w,
+/static/9ea69958321cc0788fef9404c80d77eb/c6041/formulario-de-contacto-para-sitio-estatico-2.png 325w,
+/static/9ea69958321cc0788fef9404c80d77eb/ccaa4/formulario-de-contacto-para-sitio-estatico-2.png 650w,
+/static/9ea69958321cc0788fef9404c80d77eb/6f992/formulario-de-contacto-para-sitio-estatico-2.png 767w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Un &lt;strong&gt;&lt;em&gt;Captcha&lt;/em&gt;&lt;/strong&gt; !!!!&lt;/p&gt;
+&lt;p&gt;Definitivamente descartado, eliminar el anti-spam no es posible en el plan gratuito de formspree, entonces, ¿qué otra alternativa existe?&lt;/p&gt;
+&lt;p&gt;Bueno, respuestas a esta pregunta hay muchas, servicios que hacen exactamente lo mismo como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://formkeep.com/&quot;&gt;FormKeep&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://liveformhq.com/&quot;&gt;LiveForm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://formcarry.com/&quot;&gt;FormCarry&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.formbucket.com/&quot;&gt;FormBucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pero buscando alternativas encontré algo que me llamó mucho la atención; es posible utilizar Google Docs para simular un backend y guardar el registro de mensajes en el formulario de contacto en una planilla, para luego enviarlo a mi correo.&lt;/p&gt;
+&lt;p&gt;¿Overkill? Totalmente, pero interesante &lt;em&gt;as fuck&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Así que decidí implementarlo en el sitio siguiendo las instrucciones del siguiente repositorio -&gt; &lt;a href=&quot;https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server&quot;&gt;https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Primero hay que copiar la &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1Bn4m6iA_Xch1zzhNvo_6CoQWqOAgwwkOWJKC-phHx2Q/copy&quot;&gt;siguiente planilla&lt;/a&gt; en nuestra cuenta de Google Drive.&lt;/li&gt;
+&lt;li&gt;Abrimos el &lt;strong&gt;Editor  de Secuencias de Comando&lt;/strong&gt; haciendo click en &lt;strong&gt;Herramientas&lt;/strong&gt; &gt; &lt;strong&gt;Editor de Secuencias de Comando&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Copiamos el siguiente &lt;em&gt;script&lt;/em&gt; y editamos la variable &lt;em&gt;TO_ADDRESS&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TO_ADDRESS&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;mi@correo.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;doPost&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        MailApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sendEmail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;TO_ADDRESS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Formulario de Contacto Enviado&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createTextOutput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;success&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setMimeType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MimeType&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; ContentService
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createTextOutput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; e
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setMimeType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MimeType&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Guardar el script como una &lt;em&gt;nueva versión&lt;/em&gt;, para hacerlo, ir a &lt;strong&gt;Archivo&lt;/strong&gt; &gt; &lt;strong&gt;Administrar Versiones&lt;/strong&gt;, ahí escribes un título y guardas la nueva versión.&lt;/li&gt;
+&lt;li&gt;Publicar el script, para ello, vamos a &lt;strong&gt;Publicar&lt;/strong&gt; &gt; &lt;strong&gt;Implementar como aplicación web...&lt;/strong&gt;, siempre fijarse en que la &lt;em&gt;Versión del Proyecto&lt;/em&gt; sea la última.&lt;/li&gt;
+&lt;li&gt;Apretar &lt;em&gt;Actualizar&lt;/em&gt; y aceptar los correspondientes permisos, el resultado será una &lt;em&gt;URI&lt;/em&gt;, guardar para el próximo paso.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;HTML&lt;/h3&gt;
+&lt;p&gt;Ahora que tenemos el formulario listo para recibir los mensajes, tenemos que implementarlo a un formulario html que debe cumplir con las siguientes condiciones:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La clase del &lt;code class=&quot;language-text&quot;&gt;&amp;lt;form&amp;gt;&lt;/code&gt;debe ser &lt;strong&gt;gform&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;El atributo &lt;em&gt;name&lt;/em&gt; de cada &lt;code class=&quot;language-text&quot;&gt;&amp;lt;input&amp;gt;&lt;/code&gt; debe ser el mismo que su correspondiente columna en la planilla de Google.&lt;/li&gt;
+&lt;li&gt;El &lt;em&gt;action&lt;/em&gt; del formulario debe ser la &lt;em&gt;URI&lt;/em&gt; obtenida anteriormente.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.58823529411765%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABU0lEQVQoz52R626DMAyFef+H2d/tKSZt9AItZVovUCBckgCl0PrMeEVr97ORPsX44GMncYoyoaJKadwrnVGmIgo2Hm1Cj/zVnNbBgmOfFstPyYVfK/L9Ga1Yy4sjlbfaycPhBCY4gTTdIwx9LH0X88UHlt4nVuu5xGyOIFjC81y47jvS7CA19x6OuDNTJzakPI8pzfZCpg6CNopUHommJBfRMdneTZlSyThTBxYQxd9QefzQla8Bx2QnTKeY8nKi25QTTqUVBwrWVtC6RNvW6M4ttCmgVCKaMb9a17U4nWpUVc6NU76eIw6HrWhnrjG2gDMWaq35w6BpajbSbG4xDD36vpf9Slfhcrkww4MmcHxlrW40nKa1GBfRCN3AU6s9N3Cs5XH7jkc+PTAe+4/TP1o5ftfzv8Zg2EYYdjFsEssr4yn4EXObodysUb+8Mm/Qsxl+APymqaQOO7FvAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ejemplo estatico&quot;
+        title=&quot;&quot;
+        src=&quot;/static/adb9bbf11b353dbfc0af76f97d36c9e6/ccaa4/formulario-de-contacto-para-sitio-estatico-3.png&quot;
+        srcset=&quot;/static/adb9bbf11b353dbfc0af76f97d36c9e6/4d3a0/formulario-de-contacto-para-sitio-estatico-3.png 163w,
+/static/adb9bbf11b353dbfc0af76f97d36c9e6/c6041/formulario-de-contacto-para-sitio-estatico-3.png 325w,
+/static/adb9bbf11b353dbfc0af76f97d36c9e6/ccaa4/formulario-de-contacto-para-sitio-estatico-3.png 650w,
+/static/adb9bbf11b353dbfc0af76f97d36c9e6/5ed4d/formulario-de-contacto-para-sitio-estatico-3.png 975w,
+/static/adb9bbf11b353dbfc0af76f97d36c9e6/9a5ee/formulario-de-contacto-para-sitio-estatico-3.png 1020w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Con eso tenemos lista la integración, al probarlo obtuve algo como esto:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;success&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;{\&quot;correo\&quot;:[\&quot;juanlatorreharcha@gmail.com\&quot;],\&quot;mensaje\&quot;:[\&quot;Hola, este es un mensaje de prueba.\&quot;],\&quot;telefono\&quot;:[\&quot;973362531\&quot;],\&quot;nombre\&quot;:[\&quot;Juan Latorre\&quot;]}&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 28.75751503006012%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsSAAALEgHS3X78AAAA1UlEQVQY04WO224CMQxE8/+fWNHsLsnm1s2d9gXYwY4AtWpFoxzN2B5HEWY1cNYhOA9n7PCWesEH7Ncd++X6D/vIgW6vHUIeNKZ3jVkaSFJ5UFgmg2W28K4Q+QUF1kSoxeFIeVYhlQMzaQ9lI7RPWH0mzVjDX5QfcE659ES8SYdZBxzNNh4yoRL3Bf8bTT/TtGj9Bm08bGAfYd2Gj9ggYm5IpYN1S5WaZcD+QUxtzJnSPlH7F9qJ+K53L0rOqLWilIzeO1JKpG30TlTznJVr5nI+49W5AUQ/xjtu0l62AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ejemplo mail recibido&quot;
+        title=&quot;&quot;
+        src=&quot;/static/8816956ce8d1d1310099ce6a71c50fcc/ccaa4/formulario-de-contacto-para-sitio-estatico-4.png&quot;
+        srcset=&quot;/static/8816956ce8d1d1310099ce6a71c50fcc/4d3a0/formulario-de-contacto-para-sitio-estatico-4.png 163w,
+/static/8816956ce8d1d1310099ce6a71c50fcc/c6041/formulario-de-contacto-para-sitio-estatico-4.png 325w,
+/static/8816956ce8d1d1310099ce6a71c50fcc/ccaa4/formulario-de-contacto-para-sitio-estatico-4.png 650w,
+/static/8816956ce8d1d1310099ce6a71c50fcc/5ed4d/formulario-de-contacto-para-sitio-estatico-4.png 975w,
+/static/8816956ce8d1d1310099ce6a71c50fcc/fa5f3/formulario-de-contacto-para-sitio-estatico-4.png 998w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Perfecto, ahora solo falta mejorarlo un poco, no quiero que la persona que me contacta vea ese gran mensaje después de enviar el formulario.&lt;/p&gt;
+&lt;p&gt;Para eso vamos a modificar un poco el script (primera parte, paso 2).&lt;/p&gt;
+&lt;p&gt;Primero agrego la función &lt;code class=&quot;language-text&quot;&gt;formatMailBody()&lt;/code&gt; para mejorar un poco el &lt;em&gt;look&lt;/em&gt; del correo recibido.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;formatMailBody&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; order&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; result &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;order&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        order &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; idx &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; order&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; order&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;idx&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        result &lt;span class=&quot;token operator&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;h4 style=&apos;text-transform: capitalize; margin-bottom: 0&apos;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; key &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;/h4&gt;&amp;lt;div&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sanitizeInput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;obj&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;key&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&amp;lt;/div&gt;&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; result&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Pero esta función utiliza a su vez, otra función que limpia o sanitiza el &lt;em&gt;input&lt;/em&gt; ingresado por la persona que quiere contartarme; así que agregaremos la función &lt;code class=&quot;language-text&quot;&gt;sanitizeInput&lt;/code&gt;también.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sanitizeInput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rawInput&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; placeholder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; HtmlService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createHtmlOutput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot; &quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    placeholder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;appendUntrusted&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;rawInput&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; placeholder&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getContent&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Y por supuesto teniendo dos nuevas funciones, hay que agregarlas a nuestro loop principal, que ahora queda así:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;doPost&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token function&quot;&gt;record_data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; mailData &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; orderParameter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;formDataNameOrder&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; dataOrder&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;orderParameter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            dataOrder &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;parse&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;orderParameter&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sendEmailTo &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;typeof&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TO_ADDRESS&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!==&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;undefined&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;TO_ADDRESS&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; mailData&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;formGoogleSendEmail&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sendEmailTo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            MailApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;sendEmail&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                to&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sendEmailTo&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                subject&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Contact form submitted&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                htmlBody&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;formatMailBody&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;mailData&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; dataOrder&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createTextOutput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;success&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token string&quot;&gt;&quot;data&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setMimeType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MimeType&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; ContentService
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createTextOutput&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&quot;result&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token string&quot;&gt;&quot;error&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; error
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setMimeType&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ContentService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;MimeType&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Sin embargo, nos falta la función para guardar los datos en la planilla creada al comienzo, por lo que la agregamos también.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;record_data&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; lock &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; LockService&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getDocumentLock&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    lock&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;waitLock&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;30000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;token keyword&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;JSON&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;stringify&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; doc &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; SpreadsheetApp&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getActiveSpreadsheet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sheetName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;formGoogleSheetName &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;responses&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; sheet &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; doc&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getSheetByName&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;sheetName&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; oldHeader &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getRange&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getLastColumn&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getValues&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; newHeader &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; oldHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;slice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; fieldsFromForm &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getDataColumns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; row &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token comment&quot;&gt;// loop through the header columns&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; oldHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; field &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; oldHeader&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; output &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFieldFromData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            row&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; formIndex &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fieldsFromForm&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;indexOf&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;formIndex &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                fieldsFromForm&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;splice&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;formIndex&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt; fieldsFromForm&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; i&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; field &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; fieldsFromForm&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;i&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; output &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFieldFromData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; e&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;parameters&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            row&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;output&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            newHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; nextRow &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; sheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getLastRow&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        sheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getRange&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;nextRow&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; row&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setValues&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;row&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+        &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;newHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length &lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; oldHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            sheet&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getRange&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; newHeader&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;length&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;setValues&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;newHeader&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        Logger&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;finally&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        lock&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;releaseLock&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getDataColumns&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Object&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;keys&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;column&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;column &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;formDataNameOrder&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; column &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;formGoogleSheetName&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; column &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;formGoogleSendEmail&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; column &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;honeypot&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;getFieldFromData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; values &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;field&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; output &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; values&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;join &lt;span class=&quot;token operator&quot;&gt;?&lt;/span&gt; values&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;, &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; values&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; output&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;y &lt;em&gt;voilá&lt;/em&gt;, tenemos un formulario de contacto estático completamente de una forma completamente innecesaria.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Bye Pelican, Hola Wordpress]]></title><description><![CDATA[Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas…]]></description><link>https://juanlatorre.cl/blog/bye-pelican-hola-wordpress/</link><guid isPermaLink="false">https://juanlatorre.cl/blog/bye-pelican-hola-wordpress/</guid><pubDate>Thu, 01 Feb 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Ha pasado un buen tiempo desde que instalé este blog en Pelican utilizando Python y Github, sin embargo el proceso para publicar nuevas entradas no era lo suficientemente rápido como para quedar satisfecho, así fue como investigando y haciendo &lt;em&gt;zapping&lt;/em&gt; digital me encontré con un plugin llamado &lt;a href=&quot;https://cl.wordpress.org/plugins/simply-static/&quot;&gt;Simply Static&lt;/a&gt; que aclamaba generar una copia exacta del sitio en cuestión como una copia estática, sonaba perfecto para subir a Github Pages, así que me animé a probarlo.&lt;/p&gt;
+&lt;p&gt;Después de un par de pruebas noté que funcionaba perfecto, basicamente, al apretar el botón de &lt;strong&gt;generar&lt;/strong&gt; (y modificar un poco los ajustes a gusto), se genera una copia estática en la carpeta a elección, así que decidido a utilizar wordpress en un servidor local para generar el blog, me puse manos a la obra “portando” el tema que había construído en Pelican para pasarlo a WordPress, después de un par de ajustes y unas horas de color testing el resultado que más me gustó vio la luz.&lt;/p&gt;
+&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 650px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.89349112426036%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABXklEQVQoz31SSVLEMAzMz3kAX4AXcODMnSscKN5AEseTxHG8ZG3UmswARYGrVJIjqd1qpUgp4cfZ92s4TRnWWnR9j5wzxnFEjFFK9l/Gs20bCgY+Jtw8POLp7V0TfKTrOrjewbkBvQDSE3yeZ/x11nU9AEPE7d09nl9fNBHlgaqq0Z1ahDFg8B5uGJRpSlmYT8JYTPw5zvqQAo4h4KMsYZtGQCr0zmlBXRs15ghOq2vx36wsK9TGoJQ+YxrtK/zg4ZsW0XkdlWos8tog41IzP3qEcGbp5c4aNl5YTheWYsuyoEgy3h6yKPq1jHVeMIV0HknACTJLMc9/GupSWtEptQ7IC/ZpOTSMOoaVMbiY0+kELwy5TTZRq+/GbzRlyEIj+nGsRVjxt+EIVkAIZC19i6axWtfIpqkbNeNdvdyZZ19BZI6WTY855utvY2QJ3Cy1Gw7vD1NtNR6veRJa1w2f2hS2JVwiveYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Bye pelican, hola wordpress&quot;
+        title=&quot;&quot;
+        src=&quot;/static/30c55acc0cd6b40d87ffa39b37693869/ccaa4/bye-pelican-hola-wordpress.png&quot;
+        srcset=&quot;/static/30c55acc0cd6b40d87ffa39b37693869/4d3a0/bye-pelican-hola-wordpress.png 163w,
+/static/30c55acc0cd6b40d87ffa39b37693869/c6041/bye-pelican-hola-wordpress.png 325w,
+/static/30c55acc0cd6b40d87ffa39b37693869/ccaa4/bye-pelican-hola-wordpress.png 650w,
+/static/30c55acc0cd6b40d87ffa39b37693869/5ed4d/bye-pelican-hola-wordpress.png 975w,
+/static/30c55acc0cd6b40d87ffa39b37693869/57214/bye-pelican-hola-wordpress.png 1300w,
+/static/30c55acc0cd6b40d87ffa39b37693869/1b368/bye-pelican-hola-wordpress.png 1352w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Sin embargo tenía ciertos problemas, como era de esperar el funcionamiento de algunos plugins se vio alterado, por ejemplo &lt;a href=&quot;https://wordpress.org/plugins/contact-form-7/&quot;&gt;Contact Form 7&lt;/a&gt; dejó de funcionar, así que comenzó la búsqueda de lograr una forma estática de enviar correos a través de un formulario de contacto web, pero eso queda para otro post.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Paquetes en CuarzoOS]]></title><description><![CDATA[Tomemos el ejemplo de la Aplicación cualquiera  AppGenerica.cuarzo 
+Esta tiene las siguientes características: Contiene un HASH único…]]></description><link>https://juanlatorre.cl/blog/paquetes-en-cuarzoos/</link><guid isPermaLink="false">https://juanlatorre.cl/blog/paquetes-en-cuarzoos/</guid><pubDate>Thu, 15 Jun 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Tomemos el ejemplo de la Aplicación cualquiera &lt;strong&gt;AppGenerica.cuarzo&lt;/strong&gt;
+Esta tiene las siguientes características:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Contiene un HASH único, identificador de aplicación, no puede ser cambiado.&lt;/li&gt;
+&lt;li&gt;Es una imagen ISO, montable y solo de lectura (Read-Only).&lt;/li&gt;
+&lt;li&gt;Contiene un zync-curl que permite la actualización por medio de Deltas que permiten descargar sólo el contenido actualizado de la App sin descargarla toda de nuevo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ahora, esta aplicación posee la siguiente estructura interna:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;libs/&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;libAlgo-1.2.so&lt;/li&gt;
+&lt;li&gt;libAlgo-1.3.so&lt;/li&gt;
+&lt;li&gt;libOtraCosa-5.7.so&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;bin/&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;binarios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;other/&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lo que sea que necesite esa app&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;AppRun&lt;/li&gt;
+&lt;li&gt;zync-curl&lt;/li&gt;
+&lt;li&gt;default.desktop&lt;/li&gt;
+&lt;li&gt;default.png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Explicación&lt;/h2&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;libs&lt;/strong&gt; contiene las librerias necesarias de la aplicación (obviando las que se incluyen en el sistema), estas librerias tiene un HASH único designado a cada archivo, al momento de correr la Aplicación por primera vez, todas estas librerias se mueven a la carpeta física &lt;strong&gt;/usr/share/crzlibs/&lt;/strong&gt; donde se almacenarán las librerias externas al sistema, al comprobar que una librería ya existe, se comprueba que el HASH corresponde, de ser así se utiliza y de no ser así se reemplaza con otro nombre (Ej: &lt;em&gt;libAlgo-1.2-good.so&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;bin&lt;/strong&gt; contiene los binarios de la aplicación&lt;/p&gt;
+&lt;p&gt;La carpeta &lt;strong&gt;other&lt;/strong&gt; puede contener lo que sea que esa app utilice&lt;/p&gt;
+&lt;p&gt;El script &lt;strong&gt;AppRun&lt;/strong&gt; es el encargado de correr el binario al montar la ISO, a la vez, cada vez que la aplicación es abierta, comprueba el HASH único de esta, si algun archivo ha sido modificado (por un externo o usuario) o está corrupto, avisa al usuario que &lt;em&gt;“Esta aplicación puede estar corrupta o modificada, lo que es peligroso para su equipo”&lt;/em&gt;. De ser este el caso se presentarán 4 opciones en pantalla:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Eliminar aplicación.&lt;/li&gt;
+&lt;li&gt;Autoarreglar (por medio de zync-curl se descarga el archivo corrupto de nuevo y se arregla a si misma)&lt;/li&gt;
+&lt;li&gt;Abrir de todos modos (inseguro)&lt;/li&gt;
+&lt;li&gt;Cancelar&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Preferencias y archivos residuales&lt;/h2&gt;
+&lt;p&gt;Cada aplicación está en la obligación de seguir las especificaciones respecto a archivos residuales. Todos los archivos que la aplicación quiera escribir en el disco, deberán escribirse en:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;~/.prefs/cuarzo/APP/*&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Desinstalación o eliminación&lt;/h2&gt;
+&lt;p&gt;El script &lt;strong&gt;AppRun&lt;/strong&gt; además tiene la facultad de detectar cuando una aplicación se mueve se su correspondiente ubicación a la papelera, de ser así se considera eliminación y por ende elimina automáticamente todos los archivos residuales ubicados en el path mencionado posteriormente; NO así las librerias, que se mantendrán en su lugar a pesar de la eliminación de la aplicación.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Pelican & Github]]></title><description><![CDATA[En este primer post en el blog, contaré todo el proceso de su creación utilizando  Pelican  y  Github Pages .
+Antes de comenzar con el…]]></description><link>https://juanlatorre.cl/blog/pelican-y-github/</link><guid isPermaLink="false">https://juanlatorre.cl/blog/pelican-y-github/</guid><pubDate>Wed, 10 May 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 586px;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 62.79863481228669%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQBAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAaNnovLgD//EABkQAQADAQEAAAAAAAAAAAAAAAECESEAEv/aAAgBAQABBQKMMSuGyDhrXl//xAAVEQEBAAAAAAAAAAAAAAAAAAAAAf/aAAgBAwEBPwFX/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAIAQIBAT8BR//EABcQAAMBAAAAAAAAAAAAAAAAAAAQEeH/2gAIAQEABj8CxVw//8QAHBAAAwABBQAAAAAAAAAAAAAAAAERITFBUZGh/9oACAEBAAE/IcWP0O13ol8hgxUx1Lsf/9oADAMBAAIAAwAAABCsz//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAwEBPxAxhjf/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QdJaX/8QAHBABAQACAgMAAAAAAAAAAAAAAREAITFBUZHB/9oACAEBAAE/EFUTYM8mcCjpouGASOBsxQ2+8NMxZp3h7aLl7pfuf//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;&lt;/span&gt;
+    &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;box-shadow:inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;pelican &amp; github&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c0341e5bd8fda8d5d0311abfe0aeb6cf/9e3de/pelican-y-github.jpg&quot;
+        srcset=&quot;/static/c0341e5bd8fda8d5d0311abfe0aeb6cf/0701e/pelican-y-github.jpg 163w,
+/static/c0341e5bd8fda8d5d0311abfe0aeb6cf/5a7cc/pelican-y-github.jpg 325w,
+/static/c0341e5bd8fda8d5d0311abfe0aeb6cf/9e3de/pelican-y-github.jpg 586w&quot;
+        sizes=&quot;(max-width: 586px) 100vw, 586px&quot;
+      /&gt;
+  &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;En este primer post en el blog, contaré todo el proceso de su creación utilizando &lt;strong&gt;Pelican&lt;/strong&gt; y &lt;strong&gt;Github Pages&lt;/strong&gt;.
+Antes de comenzar con el contenido real, a repasar conceptos.&lt;/p&gt;
+&lt;h2&gt;¿Qué es Pelican?&lt;/h2&gt;
+&lt;p&gt;Pelican, es un &lt;em&gt;static site generator&lt;/em&gt; escrito en Python, no requiere base de datos ni lógica del lado del servidor.&lt;/p&gt;
+&lt;p&gt;Algunas características que incluye son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Escribe tu contenido en reStructuredText, Markdown o AsciiDoc&lt;/li&gt;
+&lt;li&gt;Compilar contenido completamente estático&lt;/li&gt;
+&lt;li&gt;Temas editables con Jinja&lt;/li&gt;
+&lt;li&gt;Soporte para multi lenguaje&lt;/li&gt;
+&lt;li&gt;Atom/RSS Feed&lt;/li&gt;
+&lt;li&gt;Resaltado de código&lt;/li&gt;
+&lt;li&gt;Importar contenido desde Wordpres, Dotclear, RSS feeds, entre otros.&lt;/li&gt;
+&lt;li&gt;Sistema de plugins modulares.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Es un generador muy potente y a la vez muy simple, en el fondo &lt;strong&gt;it gets the job done&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Instalación y Configuración&lt;/h2&gt;
+&lt;p&gt;Primero debemos instalar las herramientas, dependiendo de tu version de Python elige una.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -H pip &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; pelican
+$ &lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; -H pip3 &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; pelican&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Teniendo una cuenta en github, es necesario crear dos repositorios.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;usuario.github.io-src&lt;/li&gt;
+&lt;li&gt;usuario.github.io&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;usuario.github.io-src&lt;/em&gt; será el encargado de contener el generador para luego compilar el blog y subir la parte estática al repo &lt;em&gt;usuario.github.io&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Para que esto sea posible tenemos que incluir el repositorio &lt;em&gt;usuario.github.io&lt;/em&gt; como &lt;a href=&quot;https://git-scm.com/book/es/v1/Las-herramientas-de-Git-Subm%C3%B3dulos&quot;&gt;submódulo&lt;/a&gt; del repositorio &lt;em&gt;usuario.github.io-src&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; clone git@github.com:usuario/usuario.github.io-src.git
+$ &lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; usuario.github.io-src
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; submodule add git@github.com:usuario/usuario.github.io.git output&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ahora que tenemos listos los repositorios necesarios y el submódulo, podemos comenzar con la herramienta de Pelican para generar el blog.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ pelican-quickstart&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Esta herramienta nos hará varias preguntas iniciales, las que importan son:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Where do you want to create your new web site? &lt;strong&gt;(Enter)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;URL prefix: &lt;strong&gt;&lt;a href=&quot;https://usuario.github.io&quot;&gt;https://usuario.github.io&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Generate a Fabfile/Makefile: &lt;strong&gt;Yes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Upload mechanisms: &lt;strong&gt;Elegir No para todo menos Github Pages&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Is this your personal page (usuario.github.io)?: &lt;strong&gt;Yes&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Con esto la configuración inicial queda terminada, para editar el archivo de configuración haremos:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ vim pelicanconf.py&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dentro podremos encontrar la variable &lt;code class=&quot;language-text&quot;&gt;DELETE_OUTPUT_DIRECTORY = True&lt;/code&gt;, debemos modificarlo para que sea falso: &lt;code class=&quot;language-text&quot;&gt;DELETE_OUTPUT_DIRECTORY = False&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Esto evitará que se borre el contenido de la carpeta output cada vez que compilemos.&lt;/p&gt;
+&lt;h2&gt;Creando contenido&lt;/h2&gt;
+&lt;p&gt;Actualmente nuestra estructura de archivos queda parecida a esto:&lt;/p&gt;
+&lt;p&gt;usuario.github.io-src
+│   develop_server.sh
+│   fabfile.py
+│   LICENSE
+│   Makefile
+│   pelicanconf.py
+│   publishconf.py
+│
+└───content
+│
+└───output&lt;/p&gt;
+&lt;p&gt;Además puedes crear las carpetas &lt;em&gt;plugins&lt;/em&gt; y &lt;em&gt;themes&lt;/em&gt;, para más info respecto a esto mirar los docs sobre &lt;a href=&quot;http://docs.getpelican.com/en/stable/pelican-themes.html&quot;&gt;temas&lt;/a&gt; y &lt;a href=&quot;http://docs.getpelican.com/en/stable/plugins.html&quot;&gt;plugins&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Para escribir nuestro primer post, vamos a crear un archivo &lt;strong&gt;markdown&lt;/strong&gt; en la carpeta &lt;em&gt;content&lt;/em&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; content/primer-post.md&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Dentro de este archivo, pondremos lo siguiente:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;markdown&quot;&gt;&lt;pre class=&quot;language-markdown&quot;&gt;&lt;code class=&quot;language-markdown&quot;&gt;Title: Título del Post
+Date: YYYY-MM-DD HH:MM
+Modified: YYYY-MM-DD HH:MM
+Category: Categoría
+Tags: Etiquetas, separadas, por, coma
+Slug: url-del-post
+Author: Nombre del Autor
+Summary: Resumen del contenido del post.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Aquí ya puedo comenzar a escribir el contenido del post en Markdown.&lt;/p&gt;
+&lt;p&gt;Una vez que hemos creado nuestro primer post, podemos pasar a compilar.&lt;/p&gt;
+&lt;h2&gt;Generando el sitio&lt;/h2&gt;
+&lt;p&gt;Para generar el sitio tenemos varias &lt;a href=&quot;http://docs.getpelican.com/en/stable/publish.html&quot;&gt;opciones&lt;/a&gt;, yo utilizo el comando &lt;del&gt;~make&lt;/del&gt;~.&lt;/p&gt;
+&lt;p&gt;Primero debemos compilar el markdown en html plano, para eso:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;make&lt;/span&gt; html&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Esto generará contenido estático en la carpeta output, para comprobar si el blog funciona:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;make&lt;/span&gt; serve&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Abrirá un servidor en &lt;a href=&quot;localhost:8000&quot;&gt;localhost:8000&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Si tu blog funciona perfectamente, es hora de publicarlo y hacer &lt;em&gt;commit&lt;/em&gt; y &lt;em&gt;push&lt;/em&gt; al repositorio que agregamos como &lt;em&gt;submódulo&lt;/em&gt; en la carpeta &lt;em&gt;output&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;make&lt;/span&gt; publish
+$ &lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; output
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; add &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;token string&quot;&gt;&quot;Primer post&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;--  usuario.github.io
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master
+$ &lt;span class=&quot;token function&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; add &lt;span class=&quot;token keyword&quot;&gt;.&lt;/span&gt;
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; commit -m &lt;span class=&quot;token string&quot;&gt;&quot;Primer commit&quot;&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;-- usuario.github.io-src
+$ &lt;span class=&quot;token function&quot;&gt;git&lt;/span&gt; push origin master&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Ahora puedes visitar &lt;em&gt;usuario.github.io&lt;/em&gt; y disfrutar del blog que acabas de crear.&lt;/p&gt;
+&lt;h2&gt;Fin&lt;/h2&gt;
+&lt;p&gt;Al final me dio flojera terminar el post, tenía pensado agregar una sección de cómo implementé el &lt;strong&gt;tema&lt;/strong&gt; del blog y los &lt;strong&gt;plugins&lt;/strong&gt; que estoy usando, así como &lt;strong&gt;uno que otro&lt;/strong&gt; tip y script que hice para que todo sea más fluido, pero creo que todo eso quedará para otro día si ando con ganas de escribir un poco más.&lt;/p&gt;
+&lt;p&gt;Si tienes alguna duda o comentario, o quieres saber más detalle de como crear un blog con &lt;strong&gt;Pelican&lt;/strong&gt; puedes consultarme por Twitter o Email. Ando buscando una forma de generar comentarios estáticos sin depender de un servicio externo, creo que &lt;a href=&quot;https://github.com/getpelican/pelican-plugins/tree/master/pelican_comment_system&quot;&gt;pelican-comment-system&lt;/a&gt; es la solución pero no me he dado el tiempo de implementarlo, de todas formas si lo logro antes del post sobre plugins, fijo que estará el como &lt;em&gt;implementar&lt;/em&gt;. Chao pescao.&lt;/p&gt;</content:encoded></item></channel></rss>
